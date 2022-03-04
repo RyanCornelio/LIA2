@@ -1,4 +1,6 @@
-# LIA2 2022
+# LIA2 
+Feb 2022 - Maj 2022
+
 Author: Ryan-Phillips Iserhills Cornelio.
 Student of Medieinstitutet, Gothenburg.
 March 2022. 
