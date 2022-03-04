@@ -1,0 +1,228 @@
+body {
+    background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.2)), url(img/bg01.jpg);
+    background-size:cover;
+    background-position:100%;
+    align-items: center ;
+}
+
+.login-page{
+    width: 100%;
+    padding: 10%  0 0;
+    margin: auto;
+}
+
+.logo{
+    width: 100%;
+}
+
+.main-container{
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 960px;
+    margin: auto;
+}
+
+.form{
+    position:relative;
+    z-index: 1;
+    background: rgb(255, 255, 255);
+    width: 100%;
+    height: 500px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin:auto ;
+    max-width: 960px;    
+}
+
+.bio{
+    width: 90%;
+}
+
+.form input{
+    font-family: "Roboto", sans-serif;
+    outline: 1;
+    background: #f2f2f2;
+    width: 100%;
+    border: 0;
+    margin: 0 0 15px;
+    padding: 15px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+.form button{
+    font-family: "Roboto", sans-serif;
+    text-transform: uppercase;
+    outline: 0;
+    background: #4CAF50;
+    width: 100%;
+    border: 0;
+    padding: 15px;
+    color: #FFFFFF;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.login-form{
+    width: auto;
+}
+
+.form button:hover,.form button:active{
+    background: rgb(67, 160, 67);
+}
+
+.form .message{
+    margin: 15px 0 0;
+    color: rgb(3, 3, 3);
+    font-size: 16px;
+}
+
+.form .register-form{
+    display: flex;
+    margin: auto;
+    padding: auto;
+}
+
+.icons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    opacity: 1;
+}
+
+.btnhov1:hover, .btnhov2:hover, .btnhov3:hover, .btnhov4:hover, .btnhov5:hover {
+    background-color: #1aca31;
+    opacity: 1;
+  }
+
+
+.header {
+    width: 100%;
+    text-align: left;
+    background: #5b5e5d;
+    color: rgb(0, 0, 0);
+  }
+
+
+.logo img {
+    height: 50px;
+    width: 150px;
+    margin:4%;
+}
+
+.checkbox{
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    height: 30px;
+    width: 320px;
+    margin: 10px;
+    font-size: 40px;
+}
+
+.parent{
+    display: flex;
+    flex-direction: row;
+    height: 30px;
+    width: 320px;
+    margin: 10px;
+    font-size: 16px;
+    position: relative; 
+    justify-content: center;  
+    position: relative;
+    top: 0;
+    left: 0;  
+}
+
+.image1{
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.image2{
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0.5;
+    
+}
+
+.chat {
+    text-align: right;
+    justify-content: right;
+    margin:auto;
+    max-width: 960px;
+    cursor: pointer;    
+}
+
+.chat .img:hover .chaticon:active{
+    background: royalblue;
+}
+
+.checkbox:hover {
+    background-color: RoyalBlue;
+    opacity: 1;
+  }
+
+  .popup {
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    opacity: 0.8;
+    position: center;
+    z-index: 0;
+    margin: 0px;
+    text-align: center ;
+  }
+
+  .rubrik1{
+      color: white;
+  }
+
+  .sometext{
+      color: white;
+  }
+
+  /* The Modal (background) */
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%;
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */    
+  }
+
+  /* Modal Content */
+  .modal-content{
+      background-color: #fefefe;
+      margin:auto;
+      padding: 20px;
+      border: 1px solid #888;
+      width: 80%;
+  }
+
+/* The Close Button */
+.close{
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
