@@ -1,0 +1,10 @@
+{
+  "dependencies": {
+    "animate.css": "^4.1.1",
+    "git": "^0.1.5",
+    "html2canvas": "^1.4.1",
+    "node.js": "^0.0.1-security",
+    "nodemon": "^2.0.15",
+    "yarn": "^1.22.17"
+  }
+}
