@@ -12,6 +12,7 @@ Animation effect is from this site: https://animate.style/
 4. Logo size.
 5. Center form.
 
+
 22/02-2022
 1. Adjust icons, space between.
 2. Adjust text area.
