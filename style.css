@@ -4,27 +4,25 @@
   flex-wrap: wrap;
 }
 
-@media(min-width: 760px) {
-
-  .container-2{
+@media (min-width: 760px) {
+  .container-2 {
     display: flex;
     flex-direction: column;
     height: 100%;
-    flex-basis: 80%;;
+    flex-basis: 80%;
   }
 
-.bottom{
-  display: flex;
-  flex-direction: row;
-  justify-content: end;
-  flex-basis: 80%;
-  height: 100%;
-  font-size: small;
-  flex-wrap: wrap;
+  .bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    flex-basis: 80%;
+    height: 100%;
+    font-size: small;
+    flex-wrap: wrap;
+  }
 
-}
-
-  .smartbox{
+  .smartbox {
     display: flex;
     margin: auto;
     background-color: #ffffff;
@@ -34,11 +32,10 @@
     margin-top: 5px;
     margin-bottom: 5px;
     flex-direction: column;
-  
   }
 
-  .form{
-    position:relative;
+  .form {
+    position: relative;
     z-index: 0;
     background: hsl(0, 0%, 100%);
     flex-basis: 80%;
@@ -46,147 +43,134 @@
     display: flex;
     flex-direction: column;
     /* margin:auto ; */
-    max-width: 100%;   
-    border-bottom-left-radius: 12px; 
-    border-bottom-right-radius: 12px; 
+    max-width: 100%;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
     padding: 5px;
     flex-wrap: wrap;
-    }
-    .icons{
-      display: flex;
-      flex-direction: row;
-      justify-content: space-evenly;
-      opacity: 1;
-      flex-wrap: wrap;
-      }
-    
-    .bigbox{
-      position: relative;
-      z-index: 2;
-    }
-}
-  
+  }
+  .icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    opacity: 1;
+    flex-wrap: wrap;
+  }
 
+  .bigbox {
+    position: relative;
+    z-index: 2;
+  }
+}
 
 body {
-
-background-image: url(img/bg01.jpg);
-background-size:auto;
-background-position:100%;
-background-repeat:no-repeat;
+  background-image: url(img/bg01.jpg);
+  background-size: auto;
+  background-position: 100%;
+  background-repeat: no-repeat;
 }
 
-.logo{
+.logo {
   flex-basis: 100%;
 }
 
-
-
-.bio{  
-display: flex;
-flex-direction: column;
-font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-height: 100%;
-flex-basis: 100%;
-z-index: 3;
-justify-content:flex-start;
-resize: none;
-overflow: hidden;
-background-color: #ffffff;
-justify-content: center;
+.bio {
+  display: flex;
+  flex-direction: column;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  height: 100%;
+  flex-basis: 100%;
+  z-index: 3;
+  resize: none;
+  overflow: hidden;
+  background-color: #ffffff;
+  justify-content: center;
 }
 
-.biobox{
+.biobox {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  justify-content:flex-start;
 }
 
-.biostyle{
-
+.biostyle {
   display: flex;
   flex-direction: row;
 }
 
-
-.icontext{
-font-size: 12px;
-justify-content: center;
-
+.icontext {
+  font-size: 12px;
+  justify-content: center;
 }
 
-.input{
-display: flex;
-flex-direction: row;
-font-family: "Roboto", sans-serif;
-outline: 1px;
-background: #f2f2f2;
-margin: 5px 2px;
-width: 50px;
+.input {
+  display: flex;
+  flex-direction: row;
+  font-family: "Roboto", sans-serif;
+  outline: 1px;
+  background: #f2f2f2;
+  margin: 5px 2px;
+  width: 50px;
 }
 
 .form .input {
   display: flex;
 
-  justify-content:flex-end;
+  justify-content: flex-end;
   align-items: center;
   height: 100%;
   flex-basis: 90%;
-  background-color: #ffffff;  
+  background-color: #ffffff;
 }
 /* dubbel styling */
 .form {
   display: flex;
   flex-direction: column;
-  margin:0;
+  margin: 0;
   text-transform: uppercase;
   outline: 1px;
   flex-basis: 100%;
-  color: #FFFFFF;
+  color: #ffffff;
   font-size: 15px;
   cursor: pointer;
   font-family: "Roboto", sans-serif;
 }
 
-
-.form button:hover,.form button:active{
-background: rgb(107, 107, 107);
+.form button:hover,
+.form button:active {
+  background: rgb(107, 107, 107);
 }
 
-.form .message{
-margin: 15px 0 0;
-color: #aaaaaa;
-font-size: 16px;
+.form .message {
+  margin: 15px 0 0;
+  color: #aaaaaa;
+  font-size: 16px;
 }
 
-
-
-
-.btnhov1:hover, .btnhov2:hover, .btnhov3:hover, .btnhov4:hover, .btnhov5:hover {
-background-color: #ffffff;
-opacity: 0.7;
-border-radius: 20%;
-  }
-
+.btnhov1:hover,
+.btnhov2:hover,
+.btnhov3:hover,
+.btnhov4:hover,
+.btnhov5:hover {
+  background-color: #ffffff;
+  opacity: 0.7;
+  border-radius: 20%;
+}
 
 .header {
-width: 100%;
-height: 20%;
-text-align: left;
-background: #5b5e5d;
-color: #aaaaaa;
-border-radius: 10px;
-  }
-
+  width: 100%;
+  height: 20%;
+  text-align: left;
+  background: #5b5e5d;
+  color: #aaaaaa;
+  border-radius: 10px;
+}
 
 .logoimg {
-display: flex;
-flex-direction: row;
-height: 0.5%;
-flex-basis: 1.5%;
-
-
+  display: flex;
+  flex-direction: row;
+  height: 0.5%;
+  flex-basis: 1.5%;
 }
 
 .smallbox {
@@ -202,8 +186,7 @@ flex-basis: 1.5%;
   justify-items: flex-start;
 
   margin-left: 10;
-  position:static;
-
+  position: static;
 }
 
 .sorter1 {
@@ -227,7 +210,7 @@ flex-basis: 1.5%;
   flex-direction: row;
   justify-content: left;
   justify-content: space-between;
-  margin: 5px
+  margin: 5px;
 }
 
 .item2 {
@@ -255,10 +238,8 @@ flex-basis: 1.5%;
   height: 90%;
   flex-basis: 70%;
   max-width: 100%;
-  cursor: pointer;   
+  cursor: pointer;
   position: relative;
-    
-
 }
 
 .parent {
@@ -272,22 +253,20 @@ flex-basis: 1.5%;
   position: absolute;
 }
 
-.image1{
-position: relative;
-height: 100%;
-flex-basis: 100%;
-
+.image1 {
+  position: relative;
+  height: 100%;
+  flex-basis: 100%;
 }
 
-.icontext{
+.icontext {
   display: flex;
   flex-direction: row;
 }
-.arrowbox{
+.arrowbox {
   display: flex;
   flex-direction: row;
-  align-items:center
-
+  align-items: center;
 }
 
 .arrow {
@@ -316,19 +295,18 @@ flex-basis: 100%;
   margin-top: 5px;
   font-size: 12px;
 
-  /* margin-right: 0px;  */ 
+  /* margin-right: 0px;  */
   justify-content: center;
-  
 }
 
-.chaticonbox{
-
+.chaticonbox {
   display: flex;
   justify-items: flex-end;
   flex-direction: column;
   margin: 0%;
-/*   float: right;
- */}
+  /*   float: right;
+ */
+}
 
 .popup {
   color: white;
@@ -350,34 +328,29 @@ flex-basis: 100%;
   opacity: 1;
 }
 
-
-
-
 /* The Modal (background) */
 .modal {
-
-display: none; /* Hidden by default */
-z-index: 1; /* Sit on top */
-padding-top: 95px; /* Location of the box */
-flex-basis: 100%;
-height: 100%;
-position: absolute;
-left: 50%;
-top: 40%;
-transform: translate(-50%, -50%);
+  display: none; /* Hidden by default */
+  z-index: 1; /* Sit on top */
+  padding-top: 95px; /* Location of the box */
+  flex-basis: 100%;
+  height: 100%;
+  position: absolute;
+  left: 50%;
+  top: 40%;
+  transform: translate(-50%, -50%);
 }
 
-.login-form{
-margin:0;
-justify-content: center;
+.login-form {
+  margin: 0;
+  justify-content: center;
 }
 
-.modal-content{
-width: auto;
-height: 100%;
-margin-bottom: 10px;
-border-radius: 12px;
-
+.modal-content {
+  width: auto;
+  height: 100%;
+  margin-bottom: 10px;
+  border-radius: 12px;
 }
 
 /* The Close Button */
