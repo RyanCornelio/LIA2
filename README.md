@@ -5,19 +5,13 @@ March 2022.
 
 Animation effect is from this site: https://animate.style/
 
-# LIA2 2022
-Author: Ryan-Phillips Iserhills Cornelio.
-Student of Medieinstitutet, Gothenburg.
-March 2022. 
-
-Animation effect is from this site: https://animate.style/
-
 21/02-2022
 1. Find icons, import & space between.
 2. Put in code.
 3. Fix colors.
 4. Logo size.
 5. Center form.
+
 
 22/02-2022
 1. Adjust icons, space between.
@@ -57,6 +51,3 @@ Animation effect is from this site: https://animate.style/
 5. 
 6. 
 7. 
-
-
-
