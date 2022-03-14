@@ -1,22 +1,23 @@
 * {
   box-sizing: border-box;
   color: #aaaaaa;
-  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
 }
 
-@media (min-width: 760px) {
-  .container-2 {
+@media (min-width: 768px) {
+  .container-2 , .modal-container{
     display: flex;
     flex-direction: column;
     height: 100%;
-    flex-basis: 80%;
+    flex-basis: 100%;
   }
 
   .bottom {
     display: flex;
     flex-direction: row;
     justify-content: end;
-    flex-basis: 80%;
+    flex-basis: 50%;
     height: 100%;
     font-size: small;
     flex-wrap: wrap;
@@ -27,7 +28,7 @@
     margin: auto;
     background-color: #ffffff;
     height: 100%;
-    flex-basis: 80%;
+    flex-basis: 50%;
     margin: 0px;
     /* margin-top: 5px;
     margin-bottom: 5px; */
@@ -42,8 +43,6 @@
     z-index: 0;
     background: hsl(0, 0%, 100%);
     height: 100%;
-    /* margin:auto ; */
-    max-width: 100%;
     border-bottom-left-radius: 12px;
     border-bottom-right-radius: 12px;
     padding: 5px;
@@ -54,12 +53,13 @@
     flex-direction: row;
     justify-content: space-evenly;
     opacity: 1;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
   }
 
   .bigbox {
     position: relative;
     z-index: 2;
+    flex-basis: 60%;
   }
 }
 
@@ -72,6 +72,8 @@ body {
 
 .logo {
   flex-basis: 100%;
+  height: 50px;
+  text-align:start;
 }
 
 .bio {
@@ -79,7 +81,7 @@ body {
   flex-direction: column;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   height: 100%;
-  flex-basis: 100%;
+  flex-basis: 70%;
   z-index: 3;
   resize: none;
   overflow: hidden;
@@ -93,7 +95,7 @@ body {
   justify-content: center;
   align-items: center;
   height: 100%;
-  flex-basis: 100%;
+  flex-basis: 70%;
   background-color: rgb(255, 255, 255);
 }
 
@@ -111,8 +113,7 @@ body {
   font-family: "Roboto", sans-serif;
   outline: 1px;
   background: #f2f2f2;
-  margin: 5px 2px;
-  width: 50px;
+  flex-basis: 50px;
 }
 
 .form .input {
@@ -128,7 +129,7 @@ body {
   flex-direction: column;
   margin: 0;
   outline: 1px;
-  flex-basis: 100%;
+  flex-basis: 70%;
   color: #ffffff;
   font-size: 15px;
   font-family: "Roboto", sans-serif;
@@ -158,20 +159,23 @@ body {
 }
 
 .header {
+  box-sizing: border-box;
   width: 100%;
-  height: 20%;
+  height: 70%;
   text-align: left;
   background: #5b5e5d;
   color: #aaaaaa;
   border-radius: 10px;
 }
 
-.logoimg {
+/* .img {
   display: flex;
   flex-direction: row;
-  height: 0.5%;
-  flex-basis: 1.5%;
-}
+  max-width: 100%;
+  max-height: 100%;
+
+
+} */
 
 .smallbox {
   display: flex;
@@ -181,12 +185,9 @@ body {
 .checkboxing {
   display: flex;
   flex-direction: column;
-  height: 90%;
-  width: 90%;
-  justify-items: flex-start;
-
-  margin-left: 10;
-  position: static;
+  height: 100%;
+  justify-items:center;
+  position: relative;
 }
 
 .sorter1 {
@@ -204,6 +205,7 @@ body {
   float: left;
   margin: 5px 0;
   flex: 1;
+  cursor: pointer;
 }
 .sorter2 {
   display: flex;
@@ -219,13 +221,14 @@ body {
   float: left;
   margin: 5px 0;
   flex: 1;
+  cursor: pointer;  
 }
 
 .botbot {
   display: flex;
   flex-direction: column;
   background-color: yellow;
-  width: 20%;
+/*   width: 20%; */
   height: 20%;
 }
 
@@ -237,7 +240,7 @@ body {
   margin: 0;
   height: 90%;
   flex-basis: 70%;
-  max-width: 100%;
+/*   max-width: 100%; */
   cursor: pointer;
   position: relative;
 }
@@ -246,7 +249,7 @@ body {
   display: flex;
   flex-direction: row;
   height: 30%;
-  width: 20%;
+  /* width: 20%; */
   margin: -20px;
   font-size: 16px;
   justify-content: center;
@@ -256,8 +259,6 @@ body {
 .image1 {
 display: flex;
 flex-direction: column;
-height: 10%;
-flex-basis: 10%;
 cursor: pointer;
 align-items: flex-start;
 background-color: brown;
@@ -311,7 +312,7 @@ background-color: brown;
   margin: 0px;
   text-align: right;
   height: 18vh;
-  width: 20vh;
+  /* width: 20vh; */
   position: absolute;
   bottom: 0;
   right: 0;
@@ -320,15 +321,18 @@ background-color: brown;
 .popup:hover {
   opacity: 1;
 }
+.modal-container{
+  display: flex;
+  flex-direction: column;
+  /* width: 200vh; */
+}
 
 /* The Modal (background) */
 .modal {
   display: none; /* Hidden by default */
+  flex-direction: column;
   z-index: 1; /* Sit on top */
-  padding-top: 95px; /* Location of the box */
-  flex-basis: 100%;
-  height: 100%;
-  position: absolute;
+  position: fixed;
   left: 50%;
   top: 40%;
   transform: translate(-50%, -50%);
@@ -340,10 +344,10 @@ background-color: brown;
 }
 
 .modal-content {
-  width: auto;
+  width: 100%;
   height: 100%;
-  margin-bottom: 10px;
-  border-radius: 12px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 20%;
 }
 
 /* The Close Button */
