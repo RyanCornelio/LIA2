@@ -58,3 +58,4 @@ Animation effect is from this site: https://animate.style/
 1. Adjusted widht on the modal.
 2. Removed excessive containers.
 3. Centered animation of the modal.
+4. Position the modal in the center of page

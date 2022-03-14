@@ -13,6 +13,10 @@
     flex-basis: 100%;
 /*     background-color: aqua; */
   }
+  /* The place */
+  [class="modal"] {
+    width: 100%;
+  }
 
   .bottom {
     display: flex;
@@ -174,7 +178,7 @@ body {
   color: #aaaaaa;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
-  background-color: brown;
+  background-color: #5b5e5d;
   
 }
 
@@ -348,9 +352,13 @@ float:none;
 
 /* The Modal (background) */
 .modal {
+  justify-content: 'center';
+	align-items: 'center';
   display: none; /* Hidden by default */
   flex-direction: column;
   width: 25%;
+  display:inline-block;
+  vertical-align:middle;
   z-index: 2; /* Sit on top */
   position: fixed;
   left: 50%;
