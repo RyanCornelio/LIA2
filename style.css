@@ -316,8 +316,13 @@ float:none;
   /*   float: right;
  */
 }
+.h1-container{
+  display: flex;
+  flex-direction: row;
+}
 
 .popup {
+  display: flex;
   color: white;
   padding: 16px 20px;
   border: none;
@@ -342,8 +347,8 @@ float:none;
 
 /* The Modal (background) */
 .modal {
-  justify-content: 'center';
-	align-items: 'center';
+  justify-content:center;
+	align-items: center;
   display: none; /* Hidden by default */
   flex-direction: column;
   width: 25%;
@@ -388,7 +393,7 @@ float:none;
   cursor: pointer;
 }
 
-@media all and (min-width: 768px) {
+/* @media all and (min-width: 768px) {
   .container-2 , 
   .modal-content, 
   .form, 
@@ -403,4 +408,4 @@ float:none;
     height: 100%;
     flex-basis: 100%;
   }
-}
+} */
