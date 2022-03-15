@@ -58,3 +58,14 @@ Animation effect is from this site: https://animate.style/
 1. Adjusted widht on the modal.
 2. Removed excessive containers.
 3. Centered animation of the modal.
+4. Position the modal in the center of page
+
+15/3- 2022
+
+1. Adjustments of header container & close x button...
+2. Fix modal not showing on default...
+3. 
+
+1. Fix close.
+2. Screenshot and gather information.
+3. Grab cookies.
