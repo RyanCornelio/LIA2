@@ -1,16 +1,15 @@
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>The Forms Night</title>
-        <link rel="stylesheet" href="style.css">
-        <link
-        rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-    />
-    </head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Forms Night</title>
+<link rel="stylesheet" href="style.css">
+<link
+rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+</head>
 
     <body>
         <div class="h1-container">
@@ -22,10 +21,13 @@
             <img src="./img/btn2.png" alt="" class="popup" id="myBtn">
         </div>
 
-    <!-- Modal content -->
-    <div class="modal-content">
+
+    <!-- The Modal -->
+
+  
+
+
         <div id="myModal" class="modal">
-            <div class="main-container">
         <div class="animate__animated animate__backInDown">
             <div class="upper-container">
                 
@@ -33,13 +35,15 @@
                 <div class="logo">
                         <img src="./img/Picture11.png" alt="" style="width:100px;height:30px;" class="logo-img">
                 </div>
-    </div>      
-                <div class="form" style="text-align:center">                            
+
+        </div>      
+                <div class="form" style="text-align:center">
+
 
                             <div class="biobox">
                                 <textarea name="bio" class="bio" cols="40" rows="6" placeholder="Please describe the problem you are experiencing or any feedback you would like to send"></textarea>                         
                             </div>
-                                <div class="smartbox">
+            <div class="smartbox">
                                     <p class="icontext">Automatically included to help you better</p>
                                     <div class="icons" id="icons">
                                         <div class="btnhov1">
@@ -63,34 +67,35 @@
                                     </div>
                                 
                                     <!-- Checkboxes -->
-                                    <div class="checkboxing">
-                                        <div class="sorter1">
-                                            <input type="checkbox" class="item1">
-                                            <input type="text" placeholder="my@email.com" class="input">
+                                    <form class="login-form" id="myForm">
+
+                                        <div class="checkboxing">
+
+                                            <div class="sorter1">
+                                                <input type="checkbox" class="item1">
+                                                <input type="text" placeholder="my@email.com" class="input">
+                                            </div>
+                                            <div class="sorter2">
+                                                <input type="checkbox" class="item2">
+                                                <input type="password" placeholder="password" class="input">
+                                            </div>
                                         </div>
-                                        <div class="sorter2">
-                                        <input type="checkbox" class="item2">
-                                        <input type="text" placeholder="+46706011614" class="input">
-                                    </div>
+
+                                    </form> 
+            </div>
+
                                 </div>
-                                <div class="botbot"></div>
                                 
                                 <div class="arrow">
                                     <img src="./img/arrowicon.png" alt="" class="image1">
                                     <p class="icontext2">We are here if you would like to chat directly with us</p>
+                                    <img src="./img/support.png" alt="" class="chaticon" onclick="openChat()">
                                 </div>
                             </div>
-                                
-                            <div class="chaticonbox">
-                                <img src="./img/support.png" alt="" class="chaticon" onclick="openChat()"> 
-                            </div>  
-                        
-                        </div>       
-                                </div>      
-                                          
-                            </div>
-                        </div>
-                    </div>
+
+                                 
+                        </div> 
+
             <script src="script.js"></script>
     </body>
     </html>
