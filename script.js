@@ -23,10 +23,10 @@ span.onclick = function() {
 }
 
 
-/* // Open Modal
+// Open Modal
 btn.addEventListener('click', () => {
     modal.style.display = 'block';
-}); */
+});
 
 // When the user clicks anywhere outside of the modal, close it
 console.log(modal);

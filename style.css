@@ -155,7 +155,7 @@ body {
 }
 
 /* Adjust this Ryan :)  */
-.header {
+.upper-container {
   box-sizing: border-box;
   width: 100%;
   height: 100%;
@@ -369,10 +369,12 @@ float:none;
 
 /* The Close Button */
 .close {
-  display: flex;
+  display: none;
   flex-direction: column;
+  position: sticky;
   color: #aaaaaa;
-  float: right; 
+  float: right;
+  align-content: flex-end; 
   font-size: 24px;
   font-weight: bold;
   padding-top: 2px;
@@ -401,12 +403,5 @@ float:none;
     flex-direction: column;
     height: 100%;
     flex-basis: 100%;
-  }
-}
-
-
-@media (orientation: landscape) {
-  .title {
-    color: green;
   }
 }
