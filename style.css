@@ -69,6 +69,10 @@ body {
   display: table-cell;
 }
 
+.logo-img{
+  align-items: flex-start;
+}
+
 .bio {
   display: flex;
   flex-direction: column;
@@ -344,7 +348,6 @@ float:none;
   flex-direction: column;
   width: 25%;
   display:inline-block;
-  vertical-align:middle;
   margin: auto;
   z-index: 2; /* Sit on top */
   position: fixed;
@@ -353,23 +356,20 @@ float:none;
   transform: translate(-50%, -50%);
 }
 
-.login-form {
-  margin: 0;
-  justify-content: center;
-}
+
 
 .modal-content {
   width: 100%;
   height: 100%;
   background-color: rgb(255, 255, 255);
   border-radius: 20%;
-  display: flex;
+  display: none;
   flex-direction: column;
 }
 
 /* The Close Button */
 .close {
-  display: none;
+  display: flex;
   flex-direction: column;
   position: sticky;
   color: #aaaaaa;
@@ -388,8 +388,7 @@ float:none;
   cursor: pointer;
 }
 
-@media all and (min-width: 768px),
-  (max-height: 768px) {
+@media all and (min-width: 768px) {
   .container-2 , 
   .modal-content, 
   .form, 

@@ -1,6 +1,6 @@
 // Get the modal
-    var modal = 
-    document.getElementById("myModal");
+var modal = 
+document.getElementById("myModal");
 
 // Get the button that opens the modal
 var btn = 
@@ -28,14 +28,12 @@ btn.addEventListener('click', () => {
     modal.style.display = 'block';
 });
 
-// When the user clicks anywhere outside of the modal, close it
-console.log(modal);
-window.onclick = function(event)
-{
-    if (event.target == modal) {
-        modal.style.display =
-        "none";
-        console.log(event);
-    }
-}
 
+
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
