@@ -5,68 +5,53 @@
   padding: 0;
 }
 
-@media (min-width: 768px) {
-  .container-2 , .modal-content{
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    flex-basis: 100%;
-/*     background-color: aqua; */
-  }
-  /* The place */
-  [class="modal"] {
-    width: 100%;
-  }
+.bottom {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  flex-basis: 50%;
+  height: 100%;
+  font-size: small;
+  flex-wrap: wrap;
+}
 
-  .bottom {
-    display: flex;
-    flex-direction: row;
-    justify-content: end;
-    flex-basis: 50%;
-    height: 100%;
-    font-size: small;
-    flex-wrap: wrap;
-  }
+.smartbox {
+  display: flex;
+  margin: auto;
+  background-color: #ffffff;
+  height: 100%;
+  flex-basis: 90%;
+  margin: 0px;
+  align-content: space-around;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
 
-  .smartbox {
-    display: flex;
-    margin: auto;
-    background-color: #ffffff;
-    height: 100%;
-    flex-basis: 90%;
-    margin: 0px;
-    align-content: space-around;
-    /* margin-top: 5px;
-    margin-bottom: 5px; */
-    flex-direction: column;
-  }
+.form {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  flex-basis: 100%;
+  z-index: 3;
+  background: hsl(182, 80%, 57%);
+  height: 100%;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+  padding: 5px;
+  flex-wrap: wrap;
+}
+.icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  opacity: 1;
+  flex-wrap: wrap;
+}
 
-  .form {
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    flex-basis: 100%;
-    z-index: 3;
-    background: hsl(182, 80%, 57%);
-    height: 100%;
-    border-bottom-left-radius: 12px;
-    border-bottom-right-radius: 12px;
-    padding: 5px;
-    flex-wrap: wrap;
-  }
-  .icons {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    opacity: 1;
-    flex-wrap: wrap;
-  }
-
-  .bigbox {
-    position: relative;
-    z-index: 4;
-    flex-basis: 60%;
-  }
+.bigbox {
+  position: relative;
+  z-index: 4;
+  flex-basis: 60%;
 }
 
 body {
@@ -95,6 +80,7 @@ body {
   overflow: hidden;
   background-color: #ffffff;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .biobox {
@@ -359,10 +345,11 @@ float:none;
   width: 25%;
   display:inline-block;
   vertical-align:middle;
+  margin: auto;
   z-index: 2; /* Sit on top */
   position: fixed;
   left: 50%;
-  top: 50%;
+  top: 60%;
   transform: translate(-50%, -50%);
 }
 
@@ -376,12 +363,16 @@ float:none;
   height: 100%;
   background-color: rgb(255, 255, 255);
   border-radius: 20%;
+  display: flex;
+  flex-direction: column;
 }
 
 /* The Close Button */
 .close {
+  display: flex;
+  flex-direction: column;
   color: #aaaaaa;
-  float: right;
+  float: right; 
   font-size: 24px;
   font-weight: bold;
   padding-top: 2px;
@@ -393,4 +384,29 @@ float:none;
   color: #000;
   text-decoration: none;
   cursor: pointer;
+}
+
+@media all and (min-width: 768px),
+  (max-height: 768px) {
+  .container-2 , 
+  .modal-content, 
+  .form, 
+  .modal, 
+  .close,
+  .bio, 
+  .biobox,
+  .smartbox,
+  .header{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    flex-basis: 100%;
+  }
+}
+
+
+@media (orientation: landscape) {
+  .title {
+    color: green;
+  }
 }
