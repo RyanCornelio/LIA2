@@ -1,193 +1,192 @@
 * {
   box-sizing: border-box;
   color: #aaaaaa;
-  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
 }
 
-@media(min-width: 760px) {
-
-  .container-2{
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    flex-basis: 80%;;
-  }
-
-.bottom{
+.bottom {
   display: flex;
   flex-direction: row;
   justify-content: end;
-  flex-basis: 80%;
+  flex-basis: 50%;
   height: 100%;
   font-size: small;
   flex-wrap: wrap;
-
 }
 
-  .smartbox{
-    display: flex;
-    margin: auto;
-    background-color: #ffffff;
-    height: 100%;
-    flex-basis: 80%;
-    margin: 0px;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    flex-direction: column;
-  
-  }
-
-  .form{
-    position:relative;
-    z-index: 0;
-    background: hsl(0, 0%, 100%);
-    flex-basis: 80%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    /* margin:auto ; */
-    max-width: 100%;   
-    border-bottom-left-radius: 12px; 
-    border-bottom-right-radius: 12px; 
-    padding: 5px;
-    flex-wrap: wrap;
-    }
-    .icons{
-      display: flex;
-      flex-direction: row;
-      justify-content: space-evenly;
-      opacity: 1;
-      flex-wrap: wrap;
-      }
-    
-    .bigbox{
-      position: relative;
-      z-index: 2;
-    }
+.smartbox {
+  display: flex;
+  margin: auto;
+  background-color: #ffffff;
+  height: 100%;
+  flex-basis: 90%;
+  margin: 0px;
+  align-content: space-around;
+  flex-direction: column;
+  flex-wrap: wrap;
 }
-  
 
+.form {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  flex-basis: 100%;
+  z-index: 3;
+  background: hsl(182, 80%, 57%);
+  height: 100%;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+  padding: 5px;
+  flex-wrap: wrap;
+}
+.icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  opacity: 1;
+  flex-wrap: wrap;
+}
+
+.bigbox {
+  position: relative;
+  z-index: 4;
+  flex-basis: 60%;
+}
 
 body {
-
-background-image: url(img/bg01.jpg);
-background-size:auto;
-background-position:100%;
-background-repeat:no-repeat;
+  background-image: url(img/bg01.jpg);
+  background-size: auto;
+  background-position: 100%;
+  background-repeat: no-repeat;
 }
 
-.logo{
+.logo {
   flex-basis: 100%;
+  height: 50px;
+  text-align:start;
+  vertical-align: middle;
+  display: table-cell;
 }
 
-
-
-.bio{  
-display: flex;
-flex-direction: column;
-font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-height: 100%;
-flex-basis: 100%;
-z-index: 3;
-justify-content:flex-start;
-resize: none;
-overflow: hidden;
-background-color: #ffffff;
-justify-content: center;
+.logo-img{
+  align-items: flex-start;
 }
 
-.biobox{
+.bio {
+  display: flex;
+  flex-direction: column;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  height: 80%;
+  width: 100%;
+  z-index: 5;
+  resize: none;
+  overflow: hidden;
+  background-color: #ffffff;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.biobox {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  justify-content:flex-start;
+  align-items: center;
+  height: 100%;
+  flex-basis: 20%;
+  background-color: rgb(255, 255, 255);
 }
 
-.biostyle{
+.icontext {
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-content: space-around;
+  font-size: 12px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
 
+.input {
   display: flex;
   flex-direction: row;
-}
-
-
-.icontext{
-font-size: 12px;
-justify-content: center;
-
-}
-
-.input{
-display: flex;
-flex-direction: row;
-font-family: "Roboto", sans-serif;
-outline: 1px;
-background: #f2f2f2;
-margin: 5px 2px;
-width: 50px;
+  font-family: "Roboto", sans-serif;
+  outline: 1px;
+  background: #f2f2f2;
+  flex-basis: 50px;
 }
 
 .form .input {
   display: flex;
-
-  justify-content:flex-end;
+  justify-content: flex-end;
   align-items: center;
   height: 100%;
   flex-basis: 90%;
-  background-color: #ffffff;  
+  background-color: #ffffff;
 }
-/* dubbel styling */
 .form {
   display: flex;
   flex-direction: column;
-  margin:0;
-  text-transform: uppercase;
+  margin: 0;
   outline: 1px;
-  flex-basis: 100%;
-  color: #FFFFFF;
+  flex-basis: 70%;
+  color: #ffffff;
   font-size: 15px;
-  cursor: pointer;
   font-family: "Roboto", sans-serif;
+  background-color: rgb(255, 255, 255);
 }
 
-
-.form button:hover,.form button:active{
-background: rgb(107, 107, 107);
+.form button:hover,
+.form button:active {
+  background: rgb(107, 107, 107);
 }
 
-.form .message{
-margin: 15px 0 0;
-color: #aaaaaa;
-font-size: 16px;
+.form .message {
+  margin: 15px 0 0;
+  color: #aaaaaa;
+  font-size: 16px;
 }
 
-
-
-
-.btnhov1:hover, .btnhov2:hover, .btnhov3:hover, .btnhov4:hover, .btnhov5:hover {
-background-color: #ffffff;
-opacity: 0.7;
-border-radius: 20%;
-  }
-
-
-.header {
-width: 100%;
-height: 20%;
-text-align: left;
-background: #5b5e5d;
-color: #aaaaaa;
-border-radius: 10px;
-  }
-
-
-.logoimg {
-display: flex;
-flex-direction: row;
-height: 0.5%;
-flex-basis: 1.5%;
-
-
+.btnhov1:hover,
+.btnhov2:hover,
+.btnhov3:hover,
+.btnhov4:hover,
+.btnhov5:hover {
+  background-color: #ffffff;
+  opacity: 0.7;
+  border-radius: 20%;
+  cursor: pointer;
 }
+
+/* Adjust this Ryan :)  */
+.upper-container {
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  text-align: left;
+  background: #5b5e5d;
+  color: #aaaaaa;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  background-color: #5b5e5d;
+  
+}
+
+.main-container{
+  z-index: 1;
+  height: 100%;
+  width: 80%;
+/*   background-color: aqua; */
+}
+
+/* .img {
+  display: flex;
+  flex-direction: row;
+  max-width: 100%;
+  max-height: 100%;
+
+
+} */
 
 .smallbox {
   display: flex;
@@ -197,13 +196,9 @@ flex-basis: 1.5%;
 .checkboxing {
   display: flex;
   flex-direction: column;
-  height: 90%;
-  width: 90%;
-  justify-items: flex-start;
-
-  margin-left: 10;
-  position:static;
-
+  height: 100%;
+  justify-items:center;
+  position: relative;
 }
 
 .sorter1 {
@@ -221,13 +216,14 @@ flex-basis: 1.5%;
   float: left;
   margin: 5px 0;
   flex: 1;
+  cursor: pointer;
 }
 .sorter2 {
   display: flex;
   flex-direction: row;
   justify-content: left;
   justify-content: space-between;
-  margin: 5px
+  margin: 5px;
 }
 
 .item2 {
@@ -236,13 +232,14 @@ flex-basis: 1.5%;
   float: left;
   margin: 5px 0;
   flex: 1;
+  cursor: pointer;  
 }
 
 .botbot {
   display: flex;
   flex-direction: column;
   background-color: yellow;
-  width: 20%;
+/*   width: 20%; */
   height: 20%;
 }
 
@@ -254,46 +251,48 @@ flex-basis: 1.5%;
   margin: 0;
   height: 90%;
   flex-basis: 70%;
-  max-width: 100%;
-  cursor: pointer;   
+/*   max-width: 100%; */
+  cursor: pointer;
   position: relative;
-    
-
 }
 
 .parent {
   display: flex;
   flex-direction: row;
   height: 30%;
-  width: 20%;
+  /* width: 20%; */
   margin: -20px;
   font-size: 16px;
   justify-content: center;
   position: absolute;
 }
 
-.image1{
-position: relative;
-height: 100%;
-flex-basis: 100%;
-
+.image1 {
+display: flex;
+flex-direction: column;
+cursor: pointer;
+float: left;
 }
 
-.icontext{
+.icontext2 {
   display: flex;
-  flex-direction: row;
-}
-.arrowbox{
-  display: flex;
-  flex-direction: row;
-  align-items:center
-
+  flex-direction: column;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  margin-top: 5px;
+  font-size: 12px;
+  float: right;
 }
 
+/* Adjust position*/
 .arrow {
+  height: 30%;
+  width: auto;
+  background-color: rgb(255, 255, 255);
+  display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  margin: 0px;
+/*   align-items: center; */
+float:none;
 }
 
 .image2 {
@@ -303,44 +302,36 @@ flex-basis: 100%;
   margin: 0.5px;
 }
 
-.icontext {
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  margin-top: 0px;
-}
+
 .chat .img:hover .chaticon:active {
   background: royalblue;
 }
 
-.icontext2 {
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  margin-top: 5px;
-  font-size: 12px;
-
-  /* margin-right: 0px;  */ 
-  justify-content: center;
-  
-}
-
-.chaticonbox{
-
+.chaticonbox {
   display: flex;
   justify-items: flex-end;
   flex-direction: column;
   margin: 0%;
-/*   float: right;
- */}
+  align-items: flex-end;
+  /*   float: right;
+ */
+}
+.h1-container{
+  display: flex;
+  flex-direction: row;
+}
 
 .popup {
+  display: flex;
   color: white;
   padding: 16px 20px;
   border: none;
   cursor: pointer;
   opacity: 0.9;
-  z-index: 0;
   margin: 0px;
   text-align: right;
   height: 18vh;
-  width: 20vh;
+  /* width: 20vh; */
   position: absolute;
   bottom: 0;
   right: 0;
@@ -349,41 +340,46 @@ flex-basis: 100%;
 .popup:hover {
   opacity: 1;
 }
-
-
-
+.modal-container{
+  display: flex;
+  flex-direction: column;
+}
 
 /* The Modal (background) */
 .modal {
-
-display: none; /* Hidden by default */
-z-index: 1; /* Sit on top */
-padding-top: 95px; /* Location of the box */
-flex-basis: 100%;
-height: 100%;
-position: absolute;
-left: 50%;
-top: 40%;
-transform: translate(-50%, -50%);
+  justify-content:center;
+	align-items: center;
+  display: none; /* Hidden by default */
+  flex-direction: column;
+  width: 25%;
+  display:inline-block;
+  margin: auto;
+  z-index: 2; /* Sit on top */
+  position: fixed;
+  left: 50%;
+  top: 60%;
+  transform: translate(-50%, -50%);
 }
 
-.login-form{
-margin:0;
-justify-content: center;
-}
 
-.modal-content{
-width: auto;
-height: 100%;
-margin-bottom: 10px;
-border-radius: 12px;
 
+.modal-content {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(255, 255, 255);
+  border-radius: 20%;
+  display: none;
+  flex-direction: column;
 }
 
 /* The Close Button */
 .close {
+  display: flex;
+  flex-direction: column;
+  position: sticky;
   color: #aaaaaa;
   float: right;
+  align-content: flex-end; 
   font-size: 24px;
   font-weight: bold;
   padding-top: 2px;
@@ -396,3 +392,20 @@ border-radius: 12px;
   text-decoration: none;
   cursor: pointer;
 }
+
+/* @media all and (min-width: 768px) {
+  .container-2 , 
+  .modal-content, 
+  .form, 
+  .modal, 
+  .close,
+  .bio, 
+  .biobox,
+  .smartbox,
+  .header{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    flex-basis: 100%;
+  }
+} */
