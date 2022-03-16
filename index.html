@@ -12,8 +12,10 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/
 </head>
 
     <body>
-
-        
+        <div id="capture" style="padding: 10px; background: #1ceea8">
+            <h4 style="color: #000; ";>Hello world!</h4>
+        </div>
+        <button onclick="screenshot()">Take Screenshot</button>
 
         <!-- Trigger/Open The Modal -->
         <div class="popup">
@@ -28,7 +30,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/
 
         <div id="myModal" class="modal">
         <div class="animate__animated animate__backInDown">
-            <div class="upper-container">
+        <div class="upper-container">
                 
             <span class="close">&times;</span>     
                 <div class="logo">
@@ -96,5 +98,6 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/
                         </div> 
 
             <script src="script.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
     </body>
     </html>

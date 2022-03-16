@@ -70,11 +70,17 @@ body {
 }
 
 .logo {
-  flex-basis: 100%;
-  height: 50px;
-  text-align:start;
-  vertical-align: middle;
-  display: table-cell;
+flex-basis: 100%;
+height: 50px;
+text-align:start;
+vertical-align: middle;
+display: table-cell;
+}
+
+.logo-img{
+  display: flex;
+  align-content: space-evenly;
+  left:10%;
 }
 
 .bio {
@@ -162,13 +168,13 @@ body {
 }
 
 /* Adjust this Ryan :)  */
-.header {
+.upper-container {
   box-sizing: border-box;
   width: 100%;
   height: 100%;
   text-align: left;
-  background: #5b5e5d;
-  color: #aaaaaa;
+  /* background: #5b5e5d; */
+  /* color: #aaaaaa; */
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
   background-color: #5b5e5d;
@@ -312,7 +318,7 @@ width: 10%;
 .modal {
   display: none; /* Hidden by default */
   flex-direction: column;
-  width: 25%;
+  width: 20%;
   z-index: 2; /* Sit on top */
   position: fixed;
   left: 50%;
