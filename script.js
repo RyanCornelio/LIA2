@@ -44,8 +44,8 @@ function screenshot(){
 html2canvas(document.querySelector("#capture")).then(canvas => {
   document.body.appendChild(canvas)
 });
-html2canvas(element, options);
+/* html2canvas(element, options);
 
 html2canvas(document.body).then(function(canvas) {
   document.body.appendChild(canvas);
-});}
+}); */}
