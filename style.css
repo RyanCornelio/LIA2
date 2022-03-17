@@ -293,14 +293,10 @@ width: 10%;
 
 .popup {
   color: white;
-  padding: 16px 20px;
-  border: none;
   cursor: pointer;
   opacity: 0.9;
-  margin: 0px;
   text-align: right;
   height: 18vh;
-  /* width: 20vh; */
   position: absolute;
   bottom: 0;
   right: 0;
