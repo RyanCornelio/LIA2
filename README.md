@@ -69,3 +69,7 @@ Animation effect is from this site: https://animate.style/
 1. Fix close.
 2. Screenshot and gather information.
 3. Grab cookies.
+
+17/3-2022
+1. Radius on botto.
+2. 
