@@ -64,13 +64,14 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/
                 </div>
 
         </div>      
+        <form name="myForm" class="user-form" id="myForm" METHOD="GET">
                 <div class="form" style="text-align:center">
 
 
                             <div class="biobox">
                                 <textarea name="bio" class="bio" cols="40" rows="6" placeholder="Please describe the problem you are experiencing or any feedback you would like to send"></textarea>                         
                             </div>
-            <div class="smartbox">
+                                <div class="smartbox">
                                     <p class="icontext">Automatically included to help you better</p>
                                 <div class="icons" id="icons">
                                         <div class="btnhov1">
@@ -94,34 +95,32 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/
                                     </div>
                                 
                                     <!-- Checkboxes -->
-                                    <form class="login-form" id="myForm">
-
                                         <div class="checkboxing">
 
                                             <div class="sorter1" style="box-sizing: border-box;">
-                                                <input type="checkbox" class="item1">
-                                                <input type="text" placeholder="my@email.com" class="input">
+                                                <input type="checkbox" class="item1" VALUE="">
+                                                <input type="text" placeholder="my@email.com" class="input" VALUE="">
                                             </div>
                                             <div class="sorter2">
-                                                <input type="checkbox" class="item2" style="box-sizing: border-box;">
+                                                <input type="checkbox" VALUE="" class="item2" style="box-sizing: border-box;">
                                                 <input type="text" placeholder="+46706011614
-                                                " class="input">
+                                                " class="input" VALUE="">
                                             </div>
                                         </div>
-
-                                    </form> 
+                </form> 
+                <div class="bottom-container">
+                    <img src="./img/arrowicon.png" name="button" class="image1" type="button" value="Click" onClick="testResults">
+                    <p class="icontext2">We are here if you would like to chat directly with us</p>
+                    <img src="./img/support.png" alt="" class="chaticon" onclick="openChat()">
+                </div>
+                </div>
             </div>
+        </div>
+    </div>
 
-            <div class="bottom-container">
-                <img src="./img/arrowicon.png" alt="" class="image1">
-                <p class="icontext2">We are here if you would like to chat directly with us</p>
-                <img src="./img/support.png" alt="" class="chaticon" onclick="openChat()">
-            </div>
+            
                                 </div>
-                                
-                            </div>
-
-                                 
+                            </div> 
                         </div> 
 
             <script src="script.js"></script>

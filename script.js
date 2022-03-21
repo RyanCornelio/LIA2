@@ -49,3 +49,9 @@ html2canvas(document.querySelector("#capture")).then(canvas => {
 html2canvas(document.body).then(function(canvas) {
   document.body.appendChild(canvas);
 }); */}
+
+
+function testResults (form) {
+  var TestVar = form.inputbox.value;
+  alert ("You typed: " + TestVar);
+}
