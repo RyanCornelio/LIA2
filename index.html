@@ -12,14 +12,40 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/
 </head>
 
     <body>
+
+        <div id="container">
+            <h1><span></span></h1>
+        </div>
+
+        <!-- <div class="flexbox-container">
+
+            <div class="flexbox-item flexbox-item-1">
+
+
+            </div>
+
+            <div class="flexbox-item flexbox-item-2">
+
+
+            </div>
+
+            <div class="flexbox-item flexbox-item-3">
+
+
+            </div>
+          
+            
+            
+        </div> -->
+
         <div id="capture" style="padding: 10px; background: #1ceea8">
-            <h4 style="color: #000; ";>Hello world!</h4>
+            <h4 style="color: #000;";>Hello world!</h4>
         </div>
         <button onclick="screenshot()">Take Screenshot</button>
 
         <!-- Trigger/Open The Modal -->
         <div class="popup">
-            <img src="./img/btn2.png" alt="" class="popup" id="myBtn">
+            <img src="./img/btn2.png" alt="" class="popup" id="myBtn" data-dismiss="modal">
         </div>
 
 
@@ -29,10 +55,10 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/
 
 
         <div id="myModal" class="modal">
-        <div class="animate__animated animate__backInDown">
+        <div class="animate__animated animate__backInDown", class="animate__animated animate__bounceOutUp">
         <div class="upper-container">
                 
-            <span class="close">&times;</span>     
+            <span class="close", class="animate__animated animate__bounceOutUp">&times;</span>     
                 <div class="logo">
                         <img src="./img/Picture11.png" alt="" style="width:100px;height:30px;" class="logo-img">
                 </div>
@@ -72,26 +98,26 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/
 
                                         <div class="checkboxing">
 
-                                            <div class="sorter1">
+                                            <div class="sorter1" style="box-sizing: border-box;">
                                                 <input type="checkbox" class="item1">
                                                 <input type="text" placeholder="my@email.com" class="input">
                                             </div>
                                             <div class="sorter2">
-                                                <input type="checkbox" class="item2">
-                                                <input type="password" placeholder="password" class="input">
+                                                <input type="checkbox" class="item2" style="box-sizing: border-box;">
+                                                <input type="text" placeholder="password" class="input">
                                             </div>
                                         </div>
 
                                     </form> 
             </div>
 
+            <div class="bottom-container">
+                <img src="./img/arrowicon.png" alt="" class="image1">
+                <p class="icontext2">We are here if you would like to chat directly with us</p>
+                <img src="./img/support.png" alt="" class="chaticon" onclick="openChat()">
+            </div>
                                 </div>
                                 
-                                <div class="arrow">
-                                    <img src="./img/arrowicon.png" alt="" class="image1">
-                                    <p class="icontext2">We are here if you would like to chat directly with us</p>
-                                    <img src="./img/support.png" alt="" class="chaticon" onclick="openChat()">
-                                </div>
                             </div>
 
                                  

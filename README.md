@@ -65,7 +65,10 @@ Animation effect is from this site: https://animate.style/
 1. Adjustments of header container & close x button...
 2. Fix modal not showing on default... 
 
-16/3-2022
+16/3-2022 
+Current todo.
+
 1. Fix close.
 2. Screenshot and gather information.
 3. Grab cookies.
+
