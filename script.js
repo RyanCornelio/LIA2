@@ -40,7 +40,7 @@ window.onclick = function(event) {
 
 function screenshot(){
 html2canvas(document.querySelector("#capture")).then(canvas => {
-  document.body.appendChild(canvas)
+  document.modal.appendChild(canvas)
 });
 }
 /* html2canvas(element, options);
@@ -49,34 +49,36 @@ html2canvas(document.body).then(function(canvas) {
   document.body.appendChild(canvas);
 }); */
 
-/* var storedItem = localStorage.getItem("storedItem");
 
-function save(){
-  var Item = document.getElementsByClassName("bio").value;
-  localStorage.setItem("storedItem", Item);
-  document.getElementById("bio-id").innerHTML = Item + " SAVED";
-}
+const submit = document.querySelector('#btnConfirm');
 
-function get(){
-  localStorage.getItem("storedItem");
-  document.getElementsByClassName("openedText").innerHTML = storedItem + " OPENED";
-} */
 
-const bio = document.getElementById('bio')
-const phone = document.getElementById('phone')
-const form = document.getElementById('myForm')
-const errorElement = document.getElementById('error')
-
-form.addEventListener('submit', (e) => {
+submit.addEventListener('click', (e) => {
+  e.preventDefault()
   let messages = []
-  if(bio.value === '' || bio.value == null) {
+  const bio = document.getElementById('bio').value;
+  console.log(bio);
+  const phone = document.getElementById('phone').value;
+  console.log(phone);
+  const email = document.getElementById('email').value;
+  console.log(email);
+  const errorElement = document.getElementById('error');
 
+  if(bio.value === '' || bio.value == null) {
     messages.push('Bio is required')
   }
   
-  if (messages.length > 0) {
-    console.log('har inget')
+  if (phone.length <= 9) {
+    messages.push('Please enter 10 numbers...')
   }
-  e.preventDefault()
-  errorElement.innerText = messages.join(', ')
-})
+  if (phone.length >= 20) {
+    messages.push('Too many characters...')
+  }
+
+  if (messages.length > 0) {
+    e.preventDefault()
+    errorElement.innerText = messages.join(', ')
+  }
+
+  console.log(e)
+  })
