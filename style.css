@@ -285,10 +285,9 @@ padding: 10px;
 display: flex;
 flex-direction: column;
 cursor: pointer;
-float: left;
-height: 10%;
-width: 10%;
-margin: 5px;
+height: 100%;
+width: 100%;
+
 }
 
 .icontext2 {

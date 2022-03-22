@@ -1,3 +1,5 @@
+
+
 // Get the modal
 var modal = 
 document.getElementById("myModal");
@@ -22,14 +24,10 @@ span.onclick = function() {
     modal.style.display = "none";
 }
 
-
 // Open Modal
 btn.addEventListener('click', () => {
   modal.style.display = 'block';
 });
-
-
-
 
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
@@ -44,14 +42,41 @@ function screenshot(){
 html2canvas(document.querySelector("#capture")).then(canvas => {
   document.body.appendChild(canvas)
 });
+}
 /* html2canvas(element, options);
 
 html2canvas(document.body).then(function(canvas) {
   document.body.appendChild(canvas);
-}); */}
+}); */
 
+/* var storedItem = localStorage.getItem("storedItem");
 
-function testResults (form) {
-  var TestVar = form.inputbox.value;
-  alert ("You typed: " + TestVar);
+function save(){
+  var Item = document.getElementsByClassName("bio").value;
+  localStorage.setItem("storedItem", Item);
+  document.getElementById("bio-id").innerHTML = Item + " SAVED";
 }
+
+function get(){
+  localStorage.getItem("storedItem");
+  document.getElementsByClassName("openedText").innerHTML = storedItem + " OPENED";
+} */
+
+const bio = document.getElementById('bio')
+const phone = document.getElementById('phone')
+const form = document.getElementById('myForm')
+const errorElement = document.getElementById('error')
+
+form.addEventListener('submit', (e) => {
+  let messages = []
+  if(bio.value === '' || bio.value == null) {
+
+    messages.push('Bio is required')
+  }
+  
+  if (messages.length > 0) {
+    console.log('har inget')
+  }
+  e.preventDefault()
+  errorElement.innerText = messages.join(', ')
+})
