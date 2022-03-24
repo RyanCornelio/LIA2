@@ -13,26 +13,16 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/
 </head>
 
     <body>
-
         <div id="error"></div>
-
-
-        <div id="capture" style="padding: 10px; background: #1ceea8">
-            <h2 style="color: #000;";>Hello world!</h2>
-        </div>
-        <button onclick="screenshot()">Take Screenshot</button>
+        <button onclick="takeShot()"></button>
 
         <!-- Trigger/Open The Modal -->
         <div class="popup">
             <img src="./img/btn2.png" alt="" class="popup" id="myBtn" data-dismiss="modal">
         </div>
 
-
     <!-- The Modal -->
-
-  
-
-
+    <div id="photo">
         <div id="myModal" class="modal">
         <div class="animate__animated animate__backInDown", class="animate__animated animate__bounceOutUp">
         <div class="upper-container">
@@ -57,7 +47,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/
                                         <div class="btnhov1">
                                             <img src="./img/icon1.svg" alt="">
                                         </div>
-                                        <div class="btnhov2" onclick="screenshot()">
+                                        <div class="btnhov2" onclick="takeShot()">
                                             <img src="./img/icon2.svg" alt="">
                                         </div>
                                         <div class="btnhov3">
@@ -93,6 +83,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/
                                                 <button type="submit" id="btnConfirm" style="width: 50px; height: 30px; border: none;">
                                                     <img src="./img/arrowicon.png" alt="" name="button" class="image1" type="submit" Value="Click">
                                                     </button>
+                                                <div id="output"></div>
                                          
                                         <!--     </form> -->
                         
@@ -104,6 +95,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/
                                     </form> 
                 </div>
             </div>
+        </div>
         </div>
     </div>
 

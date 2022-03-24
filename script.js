@@ -1,5 +1,4 @@
 
-
 // Get the modal
 var modal = 
 document.getElementById("myModal");
@@ -35,19 +34,8 @@ window.onclick = function(event) {
     modal.style.display = "none";
   }
 }
-  /* Denna kanske inte behövs */
-/*   import html2canvas from 'html2canvas' */
 
-/*   function screenshot(){
-    html2canvas(document.querySelector("#capture")).then(canvas => {
-      document.modal.appendChild(canvas)
-    });
-  }
-  html2canvas(element, options);
-  
-  html2canvas(document.body).then(function(canvas) {
-    document.body.appendChild(canvas);
-}); */
+
 
 const submit = document.querySelector('#btnConfirm');
 
@@ -63,7 +51,10 @@ submit.addEventListener('click', (e) => {
   const errorElement = document.getElementById('error');
 
   console.log(bio.value)
-  if(bio.value === '' || bio.value == null) {
+  console.log(phone.value)
+  console.log(email.value)
+
+  if(bio.value.length === 0) {
     messages.push('Please fill in your issue')
   } 
   
@@ -78,6 +69,17 @@ submit.addEventListener('click', (e) => {
     e.preventDefault()
     errorElement.innerText = messages.join(' & ')
   }
-
-  console.log(e)
   })
+
+  function takeshot() {
+    let div = document.getElementById('photo');
+  
+    html2canvas(div).then(
+      function(canvas) {
+        document
+        .getElementById('output')
+        .appendChild(canvas);
+      })
+}
+
+ 
