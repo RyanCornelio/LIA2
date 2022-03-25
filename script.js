@@ -71,8 +71,10 @@ submit.addEventListener('click', (e) => {
   }
   })
 
-  function takeshot() {
-    let div = document.getElementById('photo');
+  function takeShot() {
+    let div = 
+    document.getElementById('photo');
+    
   
     html2canvas(div).then(
       function(canvas) {
@@ -82,4 +84,4 @@ submit.addEventListener('click', (e) => {
       })
 }
 
- 
+
