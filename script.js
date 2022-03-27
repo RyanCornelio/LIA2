@@ -73,7 +73,7 @@ submit.addEventListener('click', (e) => {
 
   function takeShot() {
     let div = 
-    document.getElementById('photo');
+    document.getElementById('photo', 'bio', 'input');
     
   
     html2canvas(div).then(
