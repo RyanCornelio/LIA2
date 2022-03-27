@@ -4,57 +4,27 @@
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>The Forms Night</title>
+<title>Sigma Technology</title>
 <link rel="stylesheet" href="style.css">
 <link
 rel="stylesheet"
 href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+<link rel="icon" href="/img/icon.jpg" type="image/icon type">
 </head>
 
     <body>
-
-        <div id="container">
-            <h1><span></span></h1>
-        </div>
-
-        <!-- <div class="flexbox-container">
-
-            <div class="flexbox-item flexbox-item-1">
-
-
-            </div>
-
-            <div class="flexbox-item flexbox-item-2">
-
-
-            </div>
-
-            <div class="flexbox-item flexbox-item-3">
-
-
-            </div>
-          
-            
-            
-        </div> -->
-
-        <div id="capture" style="padding: 10px; background: #1ceea8">
-            <h4 style="color: #000;";>Hello world!</h4>
-        </div>
-        <button onclick="screenshot()">Take Screenshot</button>
+        <div id="error"></div>
+        <div id="output"></div>
+        <button onclick="takeShot()">Take Screenshot</button>
 
         <!-- Trigger/Open The Modal -->
         <div class="popup">
             <img src="./img/btn2.png" alt="" class="popup" id="myBtn" data-dismiss="modal">
         </div>
 
-
     <!-- The Modal -->
-
-  
-
-
-        <div id="myModal" class="modal">
+    <div id="myModal" class="modal">
+        <div id="photo">
         <div class="animate__animated animate__backInDown", class="animate__animated animate__bounceOutUp">
         <div class="upper-container">
                 
@@ -64,19 +34,21 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/
                 </div>
 
         </div>      
+        <form name="myForm" ACTION="/" class="user-form" id="myForm" METHOD="GET">
                 <div class="form" style="text-align:center">
 
-
+                        <p id="savedText"> </p>
+                        <p id="openedText"> </p>
                             <div class="biobox">
-                                <textarea name="bio" class="bio" cols="40" rows="6" placeholder="Please describe the problem you are experiencing or any feedback you would like to send"></textarea>                         
+                                <textarea name="inputbox" id="bio" required type="input" class="bio" cols="40" rows="6" placeholder="Please describe the problem you are experiencing or any feedback you would like to send"></textarea>                         
                             </div>
-            <div class="smartbox">
+                                <div class="smartbox">
                                     <p class="icontext">Automatically included to help you better</p>
                                 <div class="icons" id="icons">
                                         <div class="btnhov1">
                                             <img src="./img/icon1.svg" alt="">
                                         </div>
-                                        <div class="btnhov2" onclick="screenshot()">
+                                        <div class="btnhov2" type="button" onclick="takeShot()">
                                             <img src="./img/icon2.svg" alt="">
                                         </div>
                                         <div class="btnhov3">
@@ -94,36 +66,46 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/
                                     </div>
                                 
                                     <!-- Checkboxes -->
-                                    <form class="login-form" id="myForm">
-
                                         <div class="checkboxing">
 
                                             <div class="sorter1" style="box-sizing: border-box;">
-                                                <input type="checkbox" class="item1">
-                                                <input type="text" placeholder="my@email.com" class="input">
+                                                <input type="checkbox" class="item1" checked>
+                                                <input type="text" id="email" placeholder="my@email.com" class="input" VALUE="" name="inputbox">
                                             </div>
                                             <div class="sorter2">
-                                                <input type="checkbox" class="item2" style="box-sizing: border-box;">
-                                                <input type="text" placeholder="password" class="input">
+                                                <input type="checkbox" VALUE="" class="item2" style="box-sizing: border-box;" checked>
+                                                <input type="text" id="phone" placeholder="+46706011614" class="input" VALUE="" name="inputbox">
                                             </div>
                                         </div>
-
+                                        <div class="bottom-container">
+                                            <!-- <form action=""> -->
+                                                <!-- <input type="image" src="img/arrowicon.jpg" name="button" class="image1" type="submit" Value="Click"> -->
+                                                
+                                                <button type="submit" id="btnConfirm" style="width: 50px; height: 30px; border: none;">
+                                                    <img src="./img/arrowicon.png" alt="" name="button" class="image1" type="submit" Value="Click" onclick="takeShot()">Take screenshot
+                                                    </button>
+                                                <div id="output"></div>
+                                         
+                                        <!--     </form> -->
+                        
+                                                <!-- <input type="image" src="./img/arrowicon.png" name="button" class="image1" type="submit" Value="Click" ></input> -->
+                            
+                                            <p class="icontext2">We are here if you would like to chat directly with us</p>
+                                            <img src="./img/support.png" alt="" class="chaticon" onclick="openChat()">
+                                        </div>
                                     </form> 
+                </div>
             </div>
+        </div>
+        </div>
+    </div>
 
-            <div class="bottom-container">
-                <img src="./img/arrowicon.png" alt="" class="image1">
-                <p class="icontext2">We are here if you would like to chat directly with us</p>
-                <img src="./img/support.png" alt="" class="chaticon" onclick="openChat()">
-            </div>
+            
                                 </div>
-                                
-                            </div>
-
-                                 
+                            </div> 
                         </div> 
 
-            <script src="script.js"></script>
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+            <script defer src="script.js"></script>
+            <script defer src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
     </body>
     </html>

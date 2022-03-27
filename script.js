@@ -1,3 +1,4 @@
+
 // Get the modal
 var modal = 
 document.getElementById("myModal");
@@ -22,14 +23,10 @@ span.onclick = function() {
     modal.style.display = "none";
 }
 
-
 // Open Modal
 btn.addEventListener('click', () => {
   modal.style.display = 'block';
 });
-
-
-
 
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
@@ -37,15 +34,54 @@ window.onclick = function(event) {
     modal.style.display = "none";
   }
 }
-  /* Denna kanske inte behövs */
-/* import html2canvas from 'html2canvas' */
 
-function screenshot(){
-html2canvas(document.querySelector("#capture")).then(canvas => {
-  document.body.appendChild(canvas)
-});
-/* html2canvas(element, options);
 
-html2canvas(document.body).then(function(canvas) {
-  document.body.appendChild(canvas);
-}); */}
+
+const submit = document.querySelector('#btnConfirm');
+
+submit.addEventListener('click', (e) => {
+  e.preventDefault()
+  let messages = []
+  const bio = document.getElementById('bio');
+
+  const phone = document.getElementById('phone');
+
+  const email = document.getElementById('email');
+
+  const errorElement = document.getElementById('error');
+
+  console.log(bio.value)
+  console.log(phone.value)
+  console.log(email.value)
+
+  if(bio.value.length === 0) {
+    messages.push('Please fill in your issue')
+  } 
+  
+  if (phone.length <= 9) {
+    messages.push('Please enter a phone number')
+  }
+  if (phone.length >= 20) {
+    messages.push('Too many characters')
+  }
+
+  if (messages.length > 0) {
+    e.preventDefault()
+    errorElement.innerText = messages.join(' & ')
+  }
+  })
+
+  function takeShot() {
+    let div = 
+    document.getElementById('photo', 'bio', 'input');
+    
+  
+    html2canvas(div).then(
+      function(canvas) {
+        document
+        .getElementById('output')
+        .appendChild(canvas);
+      })
+}
+
+
