@@ -1,4 +1,3 @@
-
 // Get the modal
 var modal = 
 document.getElementById("myModal");
@@ -35,35 +34,26 @@ window.onclick = function(event) {
   }
 }
 
-
-
 const submit = document.querySelector('#btnConfirm');
+
+function pass() {
+  btnConfirm();
+  submit();
+}
 
 submit.addEventListener('click', (e) => {
   e.preventDefault()
   let messages = []
   const bio = document.getElementById('bio');
-
   const phone = document.getElementById('phone');
-
   const email = document.getElementById('email');
-
   const errorElement = document.getElementById('error');
+/*   const form = document.querySelector('.user-form'); */
 
   console.log(bio.value)
   console.log(phone.value)
   console.log(email.value)
 
-  if(bio.value.length === 0) {
-    messages.push('Please fill in your issue')
-  } 
-  
-  if (phone.length <= 9) {
-    messages.push('Please enter a phone number')
-  }
-  if (phone.length >= 20) {
-    messages.push('Too many characters')
-  }
 
   if (messages.length > 0) {
     e.preventDefault()
@@ -71,17 +61,14 @@ submit.addEventListener('click', (e) => {
   }
   })
 
-  function takeShot() {
-    let div = 
-    document.getElementById('photo', 'bio', 'input');
-    
-  
-    html2canvas(div).then(
-      function(canvas) {
-        document
-        .getElementById('output')
-        .appendChild(canvas);
-      })
+  function SubForm (){
+    $.ajax({
+        url: '/Person/Edit/@Model.Id/',
+        type: 'post',
+        data: $('#myForm').serialize(),
+        success: function(){
+            alert("worked");
+        }
+    });
 }
-
 
