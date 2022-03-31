@@ -72,3 +72,27 @@ submit.addEventListener('click', (e) => {
     });
 }
 
+var nodemailer = require('nodemailer');
+
+var transporter = nodemailer.createTransport({
+  service: 'gmail',
+  auth: {
+    user: 'ryan.cornelio@gmail.com',
+    pass: '1291@SIGNAL'
+  }
+});
+
+var mailOptions = {
+  from: 'youremail@gmail.com',
+  to: 'myfriend@yahoo.com',
+  subject: 'Sending email using Node.js',
+  text: 'That was easy!'
+};
+
+transporter.sendMail(mailOptions, function(error, info) {
+  if (error) {
+    console.log(error);
+  } else {
+    console.log('Email sent: ' + info.response);
+  }
+});
