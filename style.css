@@ -132,6 +132,8 @@ padding: 10px;
   overflow: hidden;
   background-color: #ffffff;
   justify-content: center;
+  position: relative;
+  
 }
 
 .biobox {
