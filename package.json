@@ -3,7 +3,9 @@
     "animate.css": "^4.1.1",
     "git": "^0.1.5",
     "html2canvas": "^1.4.1",
+    "html2canvas-proxy": "^1.0.1",
     "node.js": "^0.0.1-security",
+    "nodemailer": "^6.7.3",
     "nodemon": "^2.0.15",
     "yarn": "^1.22.17"
   }

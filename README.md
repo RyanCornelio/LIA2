@@ -71,3 +71,5 @@ Current todo.
 3. Print screen.
 4. Grab cookies.
 
+
+"Send it to an email." / "zip file."
