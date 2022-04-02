@@ -10,7 +10,7 @@
 <link
 rel="stylesheet"
 href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-<link rel="icon" href="/img/icon.jpg" type="image/icon type">
+<link rel="icon" href="/img/icon.jpg">
 </head>
 
     <body>
@@ -25,25 +25,26 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/
     <!-- The Modal -->
     <div id="myModal" class="modal">
         <div id="photo">
-        <div class="animate__animated animate__backInDown" class="animate__animated animate__bounceOutUp">
+        <div class="animate__animated animate__backInDown">
         <div class="upper-container">
-            <span class="close", class="animate__animated animate__bounceOutUp">&times;</span>     
+            <span class="close">&times;</span>     
                 <div class="logo">
                         <img src="./img/Picture11.png" alt="" style="width:100px;height:30px;" class="logo-img">
                 </div>
-        </div>      
+            </div>      
                 <div class="form">
                         <form action="https://formspree.io/f/xwkynrll" method="post"  class="user-form" id="myForm">
                             <div class="biobox">
-                                <textarea name="bio" id="bio" required type="input" class="bio" cols="40" rows="6" placeholder="Please describe the problem you are experiencing or any feedback you would like to send"></textarea>                         
+                                <textarea name="bio" id="bio" required class="bio" cols="40" rows="6" placeholder="Please describe the problem you are experiencing or any feedback you would like to send"></textarea>                         
                             </div>
                                 <div class="smartbox">
+                                    <input type="button" name="" id="" value="send email" onclick="sendEmail()"> 
                                     <p class="icontext">Automatically included to help you better</p>
-                                <div class="icons" id="icons">
+                                    <div class="icons" id="icons">
                                         <div class="btnhov1">
-                                            <img src="./img/icon1.svg" alt=""id="btnConfirm" onclick="" type="button">
+                                            <img src="./img/icon1.svg" alt="" id="btnConfirm" onclick="">
                                         </div>
-                                        <div class="btnhov2" type="button" onclick="takeShot()">
+                                        <div class="btnhov2" onclick="takeShot()">
                                             <img src="./img/icon2.svg" alt="">
                                         </div>
                                         <div class="btnhov3">
@@ -55,7 +56,8 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/
                                         <div class="btnhov5">
                                             <img src="./img/icon5.svg" alt="">
                                         </div>
-                                </div> 
+                                    </div> 
+                                </div>
                                     <div class="small-box">
                                         <p class="icontext">How would you like us to contact you? (Please tick)</p>
                                     </div>
@@ -69,23 +71,24 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/
                                         </div>
                                         <div class="sorter2">
                                             <input type="checkbox" VALUE="" class="item2" style="box-sizing: border-box;" checked>
-                                            <input type="phone" id="phone" placeholder="+46706011614" class="input" VALUE="" name="phone" required>
+                                            <input id="phone" placeholder="+46706011614" class="input" VALUE="" name="phone" required>
                                            <!--  <input type="hidden" name="_next" value="C:\Projects\forms\LIA2\thanks.html"> -->
                                         </div>
                                     </div>
                                     <div class="bottom-container">
+
                                         
-                                        <button name="btn" type="submit" style="width: 50px; height: 30px; border: none;">
-                                            <img src="./img/arrowicon.png" name="button" class="image1" Value="send">
+                                        <button name="btn" type="submit" style="width: 50px; height: 30px; border: none;" onclick="sendEmail()">
+                                            <img src="./img/arrowicon.png" class="image1" alt="arrow">
                                         </button>
-                                    </form> 
-                                    <p class="icontext2">We are here if you would like to chat directly with us</p>
-                                    <img src="./img/support.png" alt="" class="chaticon" onclick="openChat()">
-                                </div>       
-                                        </div>
+                                        <p class="icontext2">We are here if you would like to chat directly with us</p>
+                                        <img src="./img/support.png" alt="" class="chaticon" onclick="openChat()">
                                     </div>
-                </div></div>
-            </div>
+                                    </form> 
+                                </div>  
+                            </div>   
+                        </div>  
+                    </div>
             <script defer src="script.js"></script>
             <script src="https://smtpjs.com/v3/smtp.js"></script>
             </body>

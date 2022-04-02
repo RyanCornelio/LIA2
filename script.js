@@ -61,7 +61,7 @@ submit.addEventListener('click', (e) => {
   }
   })
 
-  function SubForm (){
+  /* function SubForm (){
     $.ajax({
         url: '/Person/Edit/@Model.Id/',
         type: 'post',
@@ -70,9 +70,9 @@ submit.addEventListener('click', (e) => {
             alert("worked");
         }
     });
-}
+} */
 
-var nodemailer = require('nodemailer');
+/* var nodemailer = require('nodemailer');
 
 var transporter = nodemailer.createTransport({
   service: 'gmail',
@@ -80,19 +80,34 @@ var transporter = nodemailer.createTransport({
     user: 'ryan.cornelio@gmail.com',
     pass: '1291@SIGNAL'
   }
-});
+}); */
 
-var mailOptions = {
+/* var mailOptions = {
   from: 'youremail@gmail.com',
   to: 'myfriend@yahoo.com',
   subject: 'Sending email using Node.js',
   text: 'That was easy!'
-};
+}; */
 
-transporter.sendMail(mailOptions, function(error, info) {
+/* transporter.sendMail(mailOptions, function(error, info) {
   if (error) {
     console.log(error);
   } else {
     console.log('Email sent: ' + info.response);
   }
-});
+}); */
+
+
+function sendEmail(){
+  Email.send({
+    Host : "smtp.mailtrap.io",
+    Username : "<Mailtrap username>",
+    Password : "<Mailtrap password>",
+    To : 'recipient@example.com',
+    From : "sender@example.com",
+    Subject : "Test email",
+    Body : "<html><h2>Header</h2><strong>Bold text</strong><br></br><em>Italic</em></html>"
+  }).then(
+    message => alert(message)
+  );
+}
