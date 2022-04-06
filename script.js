@@ -3,7 +3,7 @@ var modal =
 document.getElementById("myModal");
 
 // Get the button that opens the modal
-var btn = 
+var myBtn = 
 document.getElementById("myBtn");
 
 // Get the <span> element that closes the modal
@@ -12,10 +12,10 @@ document.getElementsByClassName(
     "close"
 )[0];
 
-// When the user clicks the button, open the modal
-btn.onclick = function() {
+/* // When the user clicks the button, open the modal
+myBtn.onclick = function() {
     modal.style.display = "block";
-}
+} */
 
 // When the user clicks on <span> (x), close the modal
 span.onclick = function() {
@@ -23,7 +23,7 @@ span.onclick = function() {
 }
 
 // Open Modal
-btn.addEventListener('click', () => {
+myBtn.addEventListener('click', () => {
   modal.style.display = 'block';
 });
 
@@ -34,32 +34,34 @@ window.onclick = function(event) {
   }
 }
 
-const submit = document.querySelector('#btnConfirm');
+/* const submit = document.querySelector('#btnConfirm');
 
 function pass() {
   btnConfirm();
   submit();
-}
+} */
 
-submit.addEventListener('click', (e) => {
+/* submit.addEventListener('click', (e) => {
   e.preventDefault()
   let messages = []
   const bio = document.getElementById('bio');
   const phone = document.getElementById('phone');
   const email = document.getElementById('email');
-  const errorElement = document.getElementById('error');
+  const errorElement = document.getElementById('error'); */
 /*   const form = document.querySelector('.user-form'); */
 
+function pass(){
   console.log(bio.value)
   console.log(phone.value)
   console.log(email.value)
+}
 
 
-  if (messages.length > 0) {
+ /*  if (messages.length > 0) {
     e.preventDefault()
     errorElement.innerText = messages.join(' & ')
   }
-  })
+  }) */
 
   /* function SubForm (){
     $.ajax({
@@ -96,18 +98,50 @@ var transporter = nodemailer.createTransport({
     console.log('Email sent: ' + info.response);
   }
 }); */
+/* const btn = document.getElementById('btn');
+btn.addEventListener('click', function (e){
+  e.preventDefault()
+
+  const email = document.getElementById('email').value;
+  const bio = document.getElementById('bio').value;
+  const phone = document.getElementById('phone').value;
+  const body = 'bio: ' + bio + '<br/> email: ' + email + '<br/> phone' + phone + '<br/> bio' + bio;
+  
+   */
+  
+  /* function sendEmail(){
+    console.log(email.value + 'mail adressen'), */
+
+   /*  Email.send({
+      Host : "smtp.mailtrap.io",
+      Username : "ryan.cornelio@gmail.com",
+      Password : "crfhovmpvtmwonhj",
+      To : 'ryan.cornelio@gmail.com',
+      From : email,
+      Subject : phone,
+      Body : body
+    }).then(
+      message => alert(message)
+      );
+      alert('Thank you for using our service!')
+    }) */
+  /*   const clearForm = document.getElementById('bio', 'email', 'phone');
+    console.log('bio', 'email', 'phone');
+    clearForm.value = ''; */
+/* } */
 
 
-function sendEmail(){
-  Email.send({
-    Host : "smtp.mailtrap.io",
-    Username : "<Mailtrap username>",
-    Password : "<Mailtrap password>",
-    To : 'recipient@example.com',
-    From : "sender@example.com",
-    Subject : "Test email",
-    Body : "<html><h2>Header</h2><strong>Bold text</strong><br></br><em>Italic</em></html>"
-  }).then(
-    message => alert(message)
-  );
-}
+
+/* const myBtn = document.getElementById('myBtn');
+myBtn.addEventListener('click', function(e){
+  e.preventDefault()
+  console.log('hi')
+}) */
+
+
+
+const bioData = document.getElementById('bio', 'email', 'phone');
+/* const emailData = document.getElementById('email'); 
+const phoneData = document.getElementById('phone'); */
+
+

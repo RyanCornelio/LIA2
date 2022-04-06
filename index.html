@@ -33,16 +33,19 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/
                 </div>
             </div>      
                 <div class="form">
-                        <form action="https://formspree.io/f/xwkynrll" method="post"  class="user-form" id="myForm">
-                            <div class="biobox">
+                        <form id="myForm" action="mailto:ryan.cornelio@gmail.com" method="post" enctype="text/plain">
+
+                           <!--  class="user-form" -->
+<!--                             action="https://formspree.io/f/xwkynrll" method="post"
+ -->                            <div class="biobox">
                                 <textarea name="bio" id="bio" required class="bio" cols="40" rows="6" placeholder="Please describe the problem you are experiencing or any feedback you would like to send"></textarea>                         
                             </div>
                                 <div class="smartbox">
-                                    <input type="button" name="" id="" value="send email" onclick="sendEmail()"> 
+                                    <!-- <input type="button" name="" id="" value="send email" onclick="sendEmail()">  -->
                                     <p class="icontext">Automatically included to help you better</p>
                                     <div class="icons" id="icons">
                                         <div class="btnhov1">
-                                            <img src="./img/icon1.svg" alt="" id="btnConfirm" onclick="">
+                                            <img src="./img/icon1.svg" alt="" id="btnConfirm" onclick="pass()">
                                         </div>
                                         <div class="btnhov2" onclick="takeShot()">
                                             <img src="./img/icon2.svg" alt="">
@@ -78,11 +81,13 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/
                                     <div class="bottom-container">
 
                                         
-                                        <button name="btn" type="submit" style="width: 50px; height: 30px; border: none;" onclick="sendEmail()">
+                                        <button name="btn" id="btn" type="submit" style="width: 50px; height: 30px; border: none;">
                                             <img src="./img/arrowicon.png" class="image1" alt="arrow">
                                         </button>
                                         <p class="icontext2">We are here if you would like to chat directly with us</p>
-                                        <img src="./img/support.png" alt="" class="chaticon" onclick="openChat()">
+                                        <button  type="submit" style="border:none"; radius: 4px>
+                                            <img src="./img/support.png" alt="" class="chaticon" style="width: 50px; height: 60px; border: none;">
+                                        </button>
                                     </div>
                                     </form> 
                                 </div>  
@@ -90,6 +95,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/
                         </div>  
                     </div>
             <script defer src="script.js"></script>
-            <script src="https://smtpjs.com/v3/smtp.js"></script>
+            <script defer src="https://smtpjs.com/v3/smtp.js">
+            </script>
             </body>
     </html>

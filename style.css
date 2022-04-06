@@ -59,6 +59,8 @@ html {
     align-content: space-around;
     margin-top: 5px;
     margin-bottom: 5px;
+    justify-items: center;
+    text-align: center;
   }
 
   .form {
@@ -70,8 +72,9 @@ html {
     background: hsl(0, 0%, 100%);
     height: 100%;
     padding: 5px;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     max-height: 400px;
+    min-width: 250px;
     border-bottom-left-radius: 12px;
     border-bottom-right-radius: 12px;
   }
@@ -164,10 +167,10 @@ padding: 10px;
   background-color: #ffffff;
 }
 
-.form button:hover,
+/* .form button:hover,
 .form button:active {
   background: rgb(107, 107, 107);
-}
+} */
 
 .form .message {
   margin: 15px 0 0;
@@ -190,6 +193,7 @@ padding: 10px;
 .upper-container {
   box-sizing: border-box;
   width: 100%;
+  min-width: 250px;
   height: 100%;
   text-align: left;
   /* background: #5b5e5d; */
@@ -337,11 +341,11 @@ width: 100%;
   transform: translate(-50%, -50%);
 }
 
-.user-form {
+/* .user-form {
   margin: 0;
   justify-content: center;
   resize: none;
-}
+} */
 
 /* The Close Button */
 .close {
