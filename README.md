@@ -66,10 +66,10 @@ Animation effect is from this site: https://animate.style/
 2. Fix modal not showing on default... 
 
 Current todo.
-1. Form validation video. 
-2. To make make image act like a button. - Done.
-3. Print screen.
-4. Grab cookies.
+1. Form validation video: Done.
+2. To make make image act like a button: Done.
+3. Print screen: Didn't get it to work.
+4. Grab cookies: On it.
 
 
-"Send it to an email." / "zip file."
+"Send it to an email." / "zip file." : Done.
