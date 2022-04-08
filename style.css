@@ -20,7 +20,7 @@
   
 }
 
-.cookie-container .active {
+.cookie-container.active {
   bottom: 0;
 }
 
