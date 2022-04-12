@@ -33,7 +33,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/
                 </div>
             </div>      
                 <div class="form">
-                        <form id="myForm" action="mailto:ryan.cornelio@gmail.com" method="post" enctype="text/plain">
+                        <form id="myForm" action="mailto:ryan.cornelio@gmail.com" method="post" enctype="text/plain" autocomplete="on">
 
                            <!--  class="user-form" -->
 <!--                             action="https://formspree.io/f/xwkynrll" method="post"
@@ -47,7 +47,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/
                                         <div class="btnhov1">
                                             <img src="./img/icon1.svg" alt="" id="btnConfirm" onclick="pass()">
                                         </div>
-                                        <div class="btnhov2" onclick="takeShot()">
+                                        <div class="btnhov2" onclick="takeShot()">  
                                             <img src="./img/icon2.svg" alt="">
                                         </div>
                                         <div class="btnhov3">
@@ -70,11 +70,11 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/
                                         
                                         <div class="sorter1" style="box-sizing: border-box;">
                                             <input type="checkbox" class="item1" checked>
-                                            <input type="text" id="email" placeholder="my@email.com" class="input" VALUE="" name="email" required>
+                                            <input type="text" id="email" placeholder="my@email.com" class="input" VALUE="" name="email" required autocomplete="on">
                                         </div>
                                         <div class="sorter2">
                                             <input type="checkbox" VALUE="" class="item2" style="box-sizing: border-box;" checked>
-                                            <input id="phone" placeholder="+46706011614" class="input" VALUE="" name="phone" required>
+                                            <input id="phone" placeholder="+46706011614" class="input" VALUE="" name="phone" required autocomplete="on">
                                            <!--  <input type="hidden" name="_next" value="C:\Projects\forms\LIA2\thanks.html"> -->
                                         </div>
                                     </div>
@@ -95,6 +95,12 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/
                             </div>   
                         </div>  
                     </div>
+                        <!-- <button onclick="showCookies()">Show Cookies</button>
+                        <button onclick="showCookieValue()">Show Cookie Value</button>
+                        <button onclick="clearOutputCookies()">Clear</button>
+                        <div>
+                            <code id="cookies"></code>
+                        </div> -->
                     <div class="cookie-container">
                         <p>We use cookies in this website to give you a better experience... You can read about it <a href="#">here</a></p>
                         <button class="cookie-btn">Okay</button>

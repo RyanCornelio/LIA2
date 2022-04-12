@@ -73,3 +73,7 @@ Current todo.
 
 
 "Send it to an email." / "zip file." : Done.
+
+8/4-2022
+1. Cookies & code...
+https://www.tabnine.com/academy/javascript/how-to-get-cookies/
