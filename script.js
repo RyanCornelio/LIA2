@@ -3,7 +3,7 @@ var modal =
 document.getElementById("myModal");
 
 // Get the button that opens the modal
-var btn = 
+var myBtn = 
 document.getElementById("myBtn");
 
 // Get the <span> element that closes the modal
@@ -12,18 +12,13 @@ document.getElementsByClassName(
     "close"
 )[0];
 
-// When the user clicks the button, open the modal
-btn.onclick = function() {
-    modal.style.display = "block";
-}
-
 // When the user clicks on <span> (x), close the modal
 span.onclick = function() {
     modal.style.display = "none";
 }
 
 // Open Modal
-btn.addEventListener('click', () => {
+myBtn.addEventListener('click', () => {
   modal.style.display = 'block';
 });
 
@@ -34,80 +29,45 @@ window.onclick = function(event) {
   }
 }
 
-const submit = document.querySelector('#btnConfirm');
-
-function pass() {
-  btnConfirm();
-  submit();
-}
-
-submit.addEventListener('click', (e) => {
-  e.preventDefault()
-  let messages = []
-  const bio = document.getElementById('bio');
-  const phone = document.getElementById('phone');
-  const email = document.getElementById('email');
-  const errorElement = document.getElementById('error');
-/*   const form = document.querySelector('.user-form'); */
-
+function pass(){
   console.log(bio.value)
   console.log(phone.value)
   console.log(email.value)
-
-
-  if (messages.length > 0) {
-    e.preventDefault()
-    errorElement.innerText = messages.join(' & ')
-  }
-  })
-
-  /* function SubForm (){
-    $.ajax({
-        url: '/Person/Edit/@Model.Id/',
-        type: 'post',
-        data: $('#myForm').serialize(),
-        success: function(){
-            alert("worked");
-        }
-    });
-} */
-
-/* var nodemailer = require('nodemailer');
-
-var transporter = nodemailer.createTransport({
-  service: 'gmail',
-  auth: {
-    user: 'ryan.cornelio@gmail.com',
-    pass: '1291@SIGNAL'
-  }
-}); */
-
-/* var mailOptions = {
-  from: 'youremail@gmail.com',
-  to: 'myfriend@yahoo.com',
-  subject: 'Sending email using Node.js',
-  text: 'That was easy!'
-}; */
-
-/* transporter.sendMail(mailOptions, function(error, info) {
-  if (error) {
-    console.log(error);
-  } else {
-    console.log('Email sent: ' + info.response);
-  }
-}); */
-
-
-function sendEmail(){
-  Email.send({
-    Host : "smtp.mailtrap.io",
-    Username : "<Mailtrap username>",
-    Password : "<Mailtrap password>",
-    To : 'recipient@example.com',
-    From : "sender@example.com",
-    Subject : "Test email",
-    Body : "<html><h2>Header</h2><strong>Bold text</strong><br></br><em>Italic</em></html>"
-  }).then(
-    message => alert(message)
-  );
 }
+
+const bioData = document.getElementById('bio', 'email', 'phone');
+
+
+const cookieContainer = document.querySelector(".cookie-container");
+const cookieButton = document.querySelector(".cookie-btn");
+
+cookieButton.addEventListener("click", () => {
+  document.cookie = "allowCookie=true";
+  cookieContainer.classList.remove("active");
+});
+
+setTimeout(() => {
+  const getCookie = document.cookie.includes("allowCookie=true");
+  
+  if(!getCookie)
+  cookieContainer.classList.add("active");
+}, 2000);
+
+function showCookies() {
+  const output = document.getElementById('cookies')
+  output.textContent = '> ' + document.cookie
+}
+
+function clearOutputCookies() {
+  const output = document.getElementById('cookies')
+  output.textContent = ''
+}
+
+function showCookieValue() {
+  const output = document.getElementById('cookie-value')
+  email
+  output.textContent = '> ' + cookieValue
+}
+
+localStorage.setItem('name', 'Bob');
+sessionStorage.setItem('name', 'John');
