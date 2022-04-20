@@ -77,3 +77,7 @@ Current todo.
 8/4-2022
 1. Cookies & code...
 https://www.tabnine.com/academy/javascript/how-to-get-cookies/
+
+19/5-2022
+1. Set timer on icons and change colors. Grey on start, then orange & then green.
+2. Make popup from the icon... Done...

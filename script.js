@@ -20,6 +20,7 @@ span.onclick = function() {
 // Open Modal
 myBtn.addEventListener('click', () => {
   modal.style.display = 'block';
+  myFunction()
 });
 
 // When the user clicks anywhere outside of the modal, close it
@@ -53,6 +54,15 @@ setTimeout(() => {
   cookieContainer.classList.add("active");
 }, 2000);
 
+
+// Reset form after submit...
+/* const btnClear = document.querySelector('btn');
+const inputs = document.querySelector('input');
+
+btnClear.addEventListener('click', () => {
+  inputs.forEach(input => input.value = '');
+}); */
+
 function showCookies() {
   const output = document.getElementById('cookies')
   output.textContent = '> ' + document.cookie
@@ -69,5 +79,11 @@ function showCookieValue() {
   output.textContent = '> ' + cookieValue
 }
 
-localStorage.setItem('name', 'Bob');
-sessionStorage.setItem('name', 'John');
+const icons = document.querySelector(".icons");
+
+function myFunction() {
+  console.log('Hejsan')
+  icons.classList.add("active-icons");
+/*   onclick="setTimeout(myFunction, 3000)"; */
+}
+
