@@ -20,8 +20,44 @@ span.onclick = function() {
 // Open Modal
 myBtn.addEventListener('click', () => {
   modal.style.display = 'block';
-  myFunction()
+  setTimeout(changeColor, 2000)
+  setTimeout(change2, 4000)
+  setTimeout(change3, 2000)
+  setTimeout(change4, 7000)
+  setTimeout(change5, 1000)
 });
+
+function changeColor(){
+  console.log('Hello color');
+  const icon1 = document.getElementById('icon1');
+/*   icon1.classList.remove('grey777'); */
+  icon1.classList.add('green');
+}
+function change2(){
+  console.log('Hello color');
+  const icon2 = document.getElementById('icon2');
+/*   icon2.classList.remove('grey777'); */
+  icon2.classList.add('green');
+}
+function change3(){
+  console.log('Hello color');
+  const icon3 = document.getElementById('icon3');
+/*   icon3.classList.remove('grey777'); */
+  icon3.classList.add('green');
+}
+function change4(){
+  console.log('Hello color');
+  const icon4 = document.getElementById('icon4');
+/*   icon4.classL4st.remove('grey777'); */
+  icon4.classList.add('green');
+}
+function change5(){
+  console.log('Hello color');
+  const icon5 = document.getElementById('icon5');
+/*   icon5.classList.remove('grey777'); */
+  icon5.classList.add('green');
+}
+/* element = document.querySelector(selectors); */
 
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
@@ -78,12 +114,14 @@ function showCookieValue() {
   email
   output.textContent = '> ' + cookieValue
 }
-
 const icons = document.querySelector(".icons");
 
-function myFunction() {
-  console.log('Hejsan')
-  icons.classList.add("active-icons");
-/*   onclick="setTimeout(myFunction, 3000)"; */
-}
+
+/* changeColor.addEventListener('click', changeColor);
+
+function changeColor() {
+  setTimeout(changeColor, 2000)
+  {btnhov2.style.color = orange;}
+} */
+
 

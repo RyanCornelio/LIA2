@@ -50,8 +50,6 @@
   padding: 32px;
 }
 
-
-
 html {
   font-size: 62.5%
 }
@@ -132,13 +130,31 @@ html {
   
   .material-icons.orange600 {
      color: grey; 
-     animation: myanimation 15s infinite;
+     animation: myanimation 5s infinite;
+     animation-iteration-count: 10;
     }
 
     @keyframes myanimation {
-      33% {color: grey;}
-      66%{color: orange;}
+      5% {color: grey;}
+      20%{color: orange;}
+      98%{color: orange;}
       100%{color:green;}
+    }
+
+    .material-icons.grey777 {   
+      color: grey;   
+      animation: example s infinite;
+      animation-iteration-count: 10;
+}
+.material-icons.green {   
+  color: rgb(0, 145, 24);   
+  /* animation: example s infinite;
+  animation-iteration-count: 10; */
+}
+      
+    @keyframes example {
+      from {color: grey;}
+      to {color: green}
     }
 
   .icons .active-icons{
