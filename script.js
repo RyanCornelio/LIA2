@@ -9,7 +9,7 @@ document.getElementById("myBtn");
 // Get the <span> element that closes the modal
 var span = 
 document.getElementsByClassName(
-    "close", "chaticon"
+    "close"
 )[0];
 
 // When the user clicks on <span> (x), close the modal
@@ -90,15 +90,6 @@ setTimeout(() => {
   cookieContainer.classList.add("active");
 }, 2000);
 
-
-// Reset form after submit...
-/* const btnClear = document.querySelector('btn');
-const inputs = document.querySelector('input');
-
-btnClear.addEventListener('click', () => {
-  inputs.forEach(input => input.value = '');
-}); */
-
 function showCookies() {
   const output = document.getElementById('cookies')
   output.textContent = '> ' + document.cookie
@@ -125,3 +116,9 @@ function changeColor() {
 } */
 
 
+const btnClear = document.querySelector('biobox');
+let inputs = document.querySelectorAll('input');
+
+btnClear.addEventListener('click', () => {
+  inputs.forEach(input => input.value = '');  
+})
