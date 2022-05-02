@@ -116,9 +116,10 @@ function changeColor() {
 } */
 
 
-const btnClear = document.querySelector('biobox');
-let inputs = document.querySelectorAll('input');
+const btnClear = document.querySelector('#btn');
+let inputs = document.querySelectorAll('.input');
 
 btnClear.addEventListener('click', () => {
-  inputs.forEach(input => input.value = '');  
+  console.log('tjena')
+  setTimeout( ()=> inputs.forEach(input => input.value = ''), 2000 )   
 })
