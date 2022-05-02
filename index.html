@@ -11,6 +11,7 @@
 rel="stylesheet"
 href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 <link rel="icon" href="/img/icon.jpg">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 
     <body>
@@ -25,7 +26,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/
     <!-- The Modal -->
     <div id="myModal" class="modal">
         <div id="photo">
-        <div class="animate__animated animate__backInDown">
+        <div class="animate__animated animate__fadeInBottomRight">
         <div class="upper-container">
             <span class="close">&times;</span>     
                 <div class="logo">
@@ -38,26 +39,31 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/
                            <!--  class="user-form" -->
 <!--                             action="https://formspree.io/f/xwkynrll" method="post"
  -->                            <div class="biobox">
-                                <textarea name="bio" id="bio" required class="bio" cols="40" rows="6" placeholder="Please describe the problem you are experiencing or any feedback you would like to send"></textarea>                         
+                                <textarea name="bio" id="bio" required class="bio input"  cols="40" rows="6" placeholder="Please describe the problem you are experiencing or any feedback you would like to send"></textarea>                         
                             </div>
                                 <div class="smartbox">
                                     <!-- <input type="button" name="" id="" value="send email" onclick="sendEmail()">  -->
                                     <p class="icontext">Automatically included to help you better</p>
                                     <div class="icons" id="icons">
                                         <div class="btnhov1">
-                                            <img src="./img/icon1.svg" alt="" id="btnConfirm" onclick="pass()">
+                                            <!-- <img src="./img/icon1.svg" alt="" class="icon1" id="btnConfirm" onclick="pass()"> -->
+                                            <span class="material-icons" id="icon1">description</span>
                                         </div>
-                                        <div class="btnhov2" onclick="takeShot()">  
-                                            <img src="./img/icon2.svg" alt="">
+                                        <div class="btnhov2">  
+                                            <!-- <img src="./img/icon2.svg" alt=""> -->
+                                            <span class="material-icons" id="icon2">collections</span>
                                         </div>
                                         <div class="btnhov3">
-                                            <img src="./img/icon3.svg" alt="">
+                                            <!-- <img src="./img/icon3.svg" alt=""> -->
+                                            <span class="material-icons" id="icon3">person_outline</span>
                                         </div>
                                         <div class="btnhov4">
-                                            <img src="./img/icon4.svg" alt="">
+                                            <!-- <img src="./img/icon4.svg" alt=""> -->
+                                            <span class="material-icons" id="icon4">settings</span>
                                         </div>
                                         <div class="btnhov5">
-                                            <img src="./img/icon5.svg" alt="">
+                                           <!--  <img src="./img/icon5.svg" alt=""> -->
+                                           <span class="material-icons" id="icon5">add</span>
                                         </div>
                                     </div> 
                                 </div>
@@ -81,11 +87,11 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/
                                     <div class="bottom-container">
 
                                         
-                                        <button name="btn" id="btn" style="width: 50px; height: 30px; border: none;">
+                                        <button name="btn-2" id="btn-2" style="width: 50px; height: 30px; border: none;">
                                             <img src="./img/arrowicon.png" class="image1" alt="arrow">
                                         </button>
                                         <p class="icontext2">We are here if you would like to chat directly with us</p>
-                                        <button  type="submit" style="border:none"; radius: 4px>
+                                        <button name="btn" id="btn" type="submit" style="border:none" class="button">
                                             <img src="./img/support.png" alt="" class="chaticon" style="width: 50px; height: 60px; border: none;">
                                         </button>
                                     </div>

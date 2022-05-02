@@ -20,7 +20,39 @@ span.onclick = function() {
 // Open Modal
 myBtn.addEventListener('click', () => {
   modal.style.display = 'block';
+  setTimeout(changeColor, 2000)
+  setTimeout(change2, 4000)
+  setTimeout(change3, 2000)
+  setTimeout(change4, 7000)
+  setTimeout(change5, 1000)
 });
+
+function changeColor(){
+  console.log('Log files');
+  const icon1 = document.getElementById('icon1');
+  icon1.classList.add('green');
+}
+function change2(){
+  console.log('Screen shot');
+  const icon2 = document.getElementById('icon2');
+  icon2.classList.add('green');
+}
+function change3(){
+  console.log('User profile');
+  const icon3 = document.getElementById('icon3');
+  icon3.classList.add('green');
+}
+function change4(){
+  console.log('System status');
+  const icon4 = document.getElementById('icon4');
+  icon4.classList.add('green');
+}
+function change5(){
+  console.log('Error codes');
+  const icon5 = document.getElementById('icon5');
+  icon5.classList.add('green');
+}
+
 
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
@@ -69,5 +101,12 @@ function showCookieValue() {
   output.textContent = '> ' + cookieValue
 }
 
-localStorage.setItem('name', 'Bob');
-sessionStorage.setItem('name', 'John');
+const icons = document.querySelector(".icons");
+
+const btnClear = document.querySelector('#btn');
+let inputs = document.querySelectorAll('.input');
+
+btnClear.addEventListener('click', () => {
+  console.log('tjena')
+  setTimeout( ()=> inputs.forEach(input => input.value = ''), 2000 )   
+})
