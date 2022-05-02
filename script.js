@@ -28,31 +28,31 @@ myBtn.addEventListener('click', () => {
 });
 
 function changeColor(){
-  console.log('Hello color');
+  console.log('Log files');
   const icon1 = document.getElementById('icon1');
 /*   icon1.classList.remove('grey777'); */
   icon1.classList.add('green');
 }
 function change2(){
-  console.log('Hello color');
+  console.log('Screen shot');
   const icon2 = document.getElementById('icon2');
 /*   icon2.classList.remove('grey777'); */
   icon2.classList.add('green');
 }
 function change3(){
-  console.log('Hello color');
+  console.log('User profile');
   const icon3 = document.getElementById('icon3');
 /*   icon3.classList.remove('grey777'); */
   icon3.classList.add('green');
 }
 function change4(){
-  console.log('Hello color');
+  console.log('System status');
   const icon4 = document.getElementById('icon4');
 /*   icon4.classL4st.remove('grey777'); */
   icon4.classList.add('green');
 }
 function change5(){
-  console.log('Hello color');
+  console.log('Error codes');
   const icon5 = document.getElementById('icon5');
 /*   icon5.classList.remove('grey777'); */
   icon5.classList.add('green');
