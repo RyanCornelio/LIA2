@@ -10,6 +10,7 @@ right icon to send the info in an email.
 
 Functions:
 
-Print screen ( focus is on the form at the moment...)
-Cookies
+Print screen with html2canvas ( focus is on the form at the moment...).
+Cookies.
+Email.
 
