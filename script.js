@@ -67,6 +67,20 @@ function pass(){
   console.log(email.value)
 }
 
+function takeScreenshot() {
+
+  html2canvas(document.querySelector(".form")).then(canvas => {
+    document.body.appendChild(canvas)
+  });
+}
+
+document.getElementById("download").addEventListener("click", function() {
+  html2canvas(document.querySelector('.form')).then(function(canvas) {
+      console.log(canvas);
+      saveAs(canvas.toDataURL(), 'file-name.png');
+  });
+});
+
 const bioData = document.getElementById('bio', 'email', 'phone');
 
 

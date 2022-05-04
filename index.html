@@ -12,6 +12,7 @@ rel="stylesheet"
 href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 <link rel="icon" href="/img/icon.jpg">
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
 </head>
 
     <body>
@@ -22,18 +23,20 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/
         <div class="popup">
             <img src="./img/btn2.png" alt="" class="popup" id="myBtn" data-dismiss="modal">
         </div>
-
+        <div id="capture" style="padding: 10px;">
+            
+        </div>
     <!-- The Modal -->
     <div id="myModal" class="modal">
         <div id="photo">
         <div class="animate__animated animate__fadeInBottomRight">
+            <div class="form" id="download">
         <div class="upper-container">
             <span class="close">&times;</span>     
                 <div class="logo">
                         <img src="./img/Picture11.png" alt="" style="width:100px;height:30px;" class="logo-img">
                 </div>
             </div>      
-                <div class="form">
                         <form id="myForm" action="mailto:ryan.cornelio@gmail.com" method="post" enctype="text/plain" autocomplete="on">
 
                            <!--  class="user-form" -->
@@ -51,7 +54,8 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/
                                         </div>
                                         <div class="btnhov2">  
                                             <!-- <img src="./img/icon2.svg" alt=""> -->
-                                            <span class="material-icons" id="icon2">collections</span>
+                                            <span class="material-icons" id="icon2" onclick="takeScreenshot()" id="download">collections</span>
+                                            
                                         </div>
                                         <div class="btnhov3">
                                             <!-- <img src="./img/icon3.svg" alt=""> -->
